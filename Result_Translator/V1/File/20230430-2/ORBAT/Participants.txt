@@ -1,0 +1,6 @@
+SI	PAN ID	PARTY	NAME	ARABIC NAME
+1	1488	Blue	Sheikh kamran	الشيخ قمران
+2	1625	Blue	Karl Morano	كارل مورانو
+3	1604	Red	Mohamed Razeed 	محمد رزيد
+4	1603	Red	Lenindas kandappadi	لينينداس كاندابادي
+5	1642	Red	Azhaar Mohideen	أزهار محي الدين

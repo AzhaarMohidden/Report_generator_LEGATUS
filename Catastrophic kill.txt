@@ -1,0 +1,36 @@
+Catastrophic kill
+Heavy damage
+Medium damage
+Light wounded
+Heavy wounded
+wounded sitting
+wounded laying
+Mobility Damage
+Near miss
+direct fire
+Weapon
+pistol
+Friendly fire
+Party
+Blue Party
+Blue
+Red Party
+Red
+Company
+Platoon
+Section
+Soldier
+Section Commander
+True
+False
+Yes 
+No
+Distance
+Unknown
+ORBAT
+Vulnerability State
+Originator
+Victim
+Suicide Bomber
+IED
+Hit

@@ -1,0 +1,12 @@
+
+Heavy damage: 1625
+Medium damage: 1488
+Heavy damage: 1488
+Catastrophic kill: 1488
+Medium damage: 1625
+Heavy damage: 1625
+Near miss: 1625
+Catastrophic kill: 1625
+Catastrophic kill: 1488
+Catastrophic kill: 1488
+Catastrophic kill: 1625

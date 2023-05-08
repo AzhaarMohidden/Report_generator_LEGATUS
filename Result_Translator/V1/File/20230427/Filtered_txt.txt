@@ -1,0 +1,27 @@
+Hit;2023-04-03T07:29:20.189;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-04-03T07:30:58.663;RED;1625;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-03T07:34:55.246;RED;1625;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1603
+Hit;2023-04-03T07:35:04.722;BLUE;1603;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-04-03T07:41:36.672;RED;1625;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1603
+Hit;2023-04-03T07:42:24.385;Party 3;1488;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-04-03T07:43:01.048;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-04-03T07:43:12.620;Party 3;1488;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-04-03T07:43:25.549;RED;1625;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-03T07:46:45.675;RED;1625;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-04-03T07:46:46.581;RED;1625;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-03T07:52:08.504;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-04-03T07:57:41.832;BLUE;1603;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-04-03T07:58:37.517;Party 3;1488;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1604
+Hit;2023-04-03T07:58:38.655;Party 3;1488;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-03T07:58:39.564;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T07:59:46.315;RED;1625;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1604
+Hit;2023-04-03T07:59:47.221;RED;1625;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-03T07:59:53.655;RED;1625;ARX-160 (DF);No;Unknow;;Near miss;;unknown;1604
+Hit;2023-04-03T07:59:54.588;RED;1625;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T08:05:13.226;RED;1625;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-03T08:05:14.188;RED;1625;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-03T08:07:01.135;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T08:07:34.268;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T08:08:25.438;RED;1625;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T08:09:43.835;BLUE;1604;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-03T08:09:51.937;BLUE;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488

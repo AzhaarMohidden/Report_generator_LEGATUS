@@ -1,0 +1,350 @@
+Type;Time;Party;Equipment Number;Charge Type;Friendly Fire;Properties;Stream Name;Vulnerability State;Marker Note;Operator;Originator Equipment Number
+Hit;2023-04-16T08:55:59.876;RED;1604;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-16T08:40:11.621;RED;1604;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-05T18:12:45.343;RED;1603;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-05T18:12:04.373;RED;1603;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-05T17:56:53.464;RED;1603;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-05T17:26:07.101;RED;1603;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-04T18:58:48.271;BLUE;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:58:14.329;BLUE;1604;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-04T18:58:10.928;BLUE;1604;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-04T18:56:17.085;BLUE;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:54:37.904;BLUE;1603;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:54:05.888;BLUE;1603;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:53:18.471;BLUE;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:51:21.894;BLUE;1603;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:48:10.942;BLUE;1604;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-04T18:48:03.632;BLUE;1604;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-04-04T18:43:29.534;BLUE;1604;;;Unknow;;Heavy damage;;unknown;
+Hit;2023-04-04T18:42:44.258;BLUE;1604;;;Unknow;;Heavy damage;;unknown;
+Hit;2023-04-04T18:42:30.034;BLUE;1604;;;Unknow;;Medium damage;;unknown;
+Hit;2023-04-04T18:42:09.011;BLUE;1604;;;Unknow;;Light damage;;unknown;
+Hit;2023-04-04T18:41:34.728;BLUE;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:36:32.694;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1603
+Hit;2023-04-04T18:34:55.625;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1603
+Hit;2023-04-04T18:34:13.168;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-04T18:33:51.691;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-04T18:32:32.301;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-04T18:32:21.761;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-04T18:31:48.513;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1603
+Hit;2023-04-04T18:31:36.117;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1603
+Hit;2023-04-04T18:31:31.760;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1603
+Hit;2023-04-04T18:29:54.994;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-04T18:29:43.769;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-04T18:29:04.009;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1603
+Hit;2023-04-04T18:29:03.159;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1603
+Hit;2023-04-04T18:28:22.271;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-04T18:28:20.021;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-04T18:28:18.131;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1604
+Hit;2023-04-04T18:27:40.184;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-04T18:26:42.782;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-04T18:25:08.317;BLUE;1603;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:24:58.401;BLUE;1603;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-04-04T18:21:39.048;BLUE;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-04T18:21:37.631;BLUE;1603;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-04T18:21:28.302;BLUE;1603;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-04-03T08:09:51.937;BLUE;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-03T08:09:43.835;BLUE;1604;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-03T08:08:25.438;RED;1625;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T08:07:34.268;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T08:07:01.135;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T08:05:14.188;RED;1625;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-03T08:05:13.226;RED;1625;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-03T07:59:54.588;RED;1625;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T07:59:53.655;RED;1625;ARX-160 (DF);No;Unknow;;Near miss;;unknown;1604
+Hit;2023-04-03T07:59:47.221;RED;1625;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-03T07:59:46.315;RED;1625;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1604
+Hit;2023-04-03T07:58:39.564;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-04-03T07:58:38.655;Party 3;1488;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-03T07:58:37.517;Party 3;1488;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1604
+Hit;2023-04-03T07:57:41.832;BLUE;1603;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-04-03T07:52:08.504;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-04-03T07:46:46.581;RED;1625;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-03T07:46:45.675;RED;1625;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-04-03T07:43:25.549;RED;1625;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-03T07:43:12.620;Party 3;1488;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-04-03T07:43:01.048;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-04-03T07:42:24.385;Party 3;1488;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-04-03T07:41:36.672;RED;1625;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1603
+Hit;2023-04-03T07:35:04.722;BLUE;1603;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-04-03T07:34:55.246;RED;1625;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1603
+Hit;2023-04-03T07:30:58.663;RED;1625;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-04-03T07:29:20.189;BLUE;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-04-02T09:41:05.316;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-02T09:41:04.408;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Medium damage;;unknown;1488
+Hit;2023-04-02T09:40:33.356;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-02T09:40:32.185;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-02T09:23:26.669;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-02T09:23:25.272;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-02T08:27:18.572;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-04-02T08:27:17.667;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-04-02T08:05:32.009;BLUE;1603;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-28T18:09:20.487;BLUE;1604;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1603
+Hit;2023-03-28T18:09:12.972;BLUE;1604;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1603
+Hit;2023-03-28T18:01:56.149;RED;1603;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-28T18:01:46.119;RED;1603;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-03-28T18:01:33.595;RED;1603;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1604
+Hit;2023-03-28T17:51:44.034;RED;1603;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-28T17:50:35.286;RED;1603;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-28T17:50:26.075;BLUE;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-28T17:50:22.873;Party 3;1488;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-28T17:50:22.265;RED;1603;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-27T18:32:12.455;Party 3;1488;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-03-27T18:31:05.758;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-27T18:23:09.645;Party 3;1488;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-03-27T18:18:52.833;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-27T18:18:49.219;RED;1603;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-27T18:18:48.313;RED;1603;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-03-27T18:18:18.237;BLUE;1604;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1603
+Hit;2023-03-27T18:18:10.639;Party 3;1488;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-27T18:09:01.205;BLUE;1604;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-27T18:08:36.950;BLUE;1604;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-27T17:56:18.390;Party 3;1488;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-27T17:56:18.186;BLUE;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-27T17:53:19.010;RED;1603; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-03-27T17:46:50.103;BLUE;1604;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-27T17:45:12.919;BLUE;1604;;;Unknow;;Light damage;;unknown;
+Hit;2023-03-27T17:44:35.830;BLUE;1604;;;Unknow;;Light damage;;unknown;
+Hit;2023-03-27T17:44:03.618;BLUE;1604;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-27T17:43:38.910;BLUE;1604;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-27T17:43:22.827;BLUE;1604;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-27T17:43:01.457;BLUE;1604;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-27T17:41:42.798;BLUE;1604;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1603
+Hit;2023-03-27T17:41:41.854;BLUE;1604;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1603
+Hit;2023-03-27T17:35:57.459;RED;1603;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1604
+Hit;2023-03-26T18:53:21.157;BLUE;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-26T18:53:20.958;BLUE;1603;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-26T18:53:01.819;BLUE;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-26T18:43:16.761;BLUE;1603;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-26T18:43:07.146;BLUE;1603;;;Unknow;;Heavy damage;;unknown;
+Hit;2023-03-26T18:43:03.562;BLUE;1603;;;Unknow;;Medium damage;;unknown;
+Hit;2023-03-26T18:42:59.763;BLUE;1603;;;Unknow;;Light damage;;unknown;
+Hit;2023-03-26T18:42:22.265;BLUE;1603;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-20T07:19:03.137;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-20T07:19:02.257;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-20T07:02:04.241;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-20T06:46:56.015;RED;1604;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-20T06:40:38.906;BLUE;1488;;;Unknow;;Light damage;;unknown;
+Hit;2023-03-20T06:40:38.906;RED;1604;;;Unknow;;Light damage;;unknown;
+Hit;2023-03-20T06:40:38.906;RED;1603;;;Unknow;;Light damage;;unknown;
+Hit;2023-03-20T06:40:38.700;BLUE;1625;;;Unknow;;Light damage;;unknown;
+Hit;2023-03-20T06:39:25.784;RED;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-20T06:38:44.603;RED;1603;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-20T06:38:18.648;RED;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-20T06:37:42.354;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-20T06:37:20.634;RED;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-20T06:36:10.341;RED;1603;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-20T06:32:33.860;BLUE;1488;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-20T06:32:19.127;BLUE;1488;;;Unknow;;Heavy damage;;unknown;
+Hit;2023-03-20T06:32:11.590;BLUE;1488;;;Unknow;;Medium damage;;unknown;
+Hit;2023-03-20T06:31:50.680;BLUE;1488;;;Unknow;;Light damage;;unknown;
+Hit;2023-03-19T08:05:23.270;RED;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T08:05:21.639;RED;1603;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T08:05:20.378;RED;1603;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-19T08:05:16.157;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T08:05:15.251;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T08:05:14.317;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-19T07:38:54.322;RED;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T07:38:43.385;RED;1603;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T07:38:24.615;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T07:38:23.085;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T07:38:21.158;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-19T07:34:14.317;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T07:34:13.441;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T07:34:12.504;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-19T07:34:10.535;RED;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T07:34:09.367;RED;1603;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T07:33:38.504;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T07:33:37.598;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T07:33:32.682;RED;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T07:33:31.719;RED;1603;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T07:33:29.381;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-19T07:33:03.315;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T07:33:02.408;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T07:33:01.558;BLUE;1625;9mm Pistol (DF);Yes;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-19T07:33:00.212;RED;1603;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-03-19T07:32:59.305;RED;1603;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-03-19T07:32:58.512;RED;1603;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-03-19T07:07:08.013;RED;1603;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-19T07:07:07.814;BLUE;1625;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-02T07:19:35.510;RED;1604;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T07:19:33.130;RED;1604;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-03-02T07:19:29.206;RED;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T06:51:14.320;RED;1604;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-03-02T06:49:53.272;RED;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T06:49:43.867;RED;1603;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-03-02T06:48:47.168;RED;1604;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T06:48:38.601;RED;1604;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-03-02T06:48:32.693;RED;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T06:46:17.274;RED;1604;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T06:45:59.084;RED;1604;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-03-02T06:45:51.645;RED;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T06:45:22.929;RED;1604;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T06:45:22.022;RED;1604;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-03-02T06:45:10.562;RED;1603;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1625
+Hit;2023-03-02T06:45:09.656;RED;1603;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1625
+Hit;2023-02-28T07:19:31.005;RED;1623;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:19:31.004;RED;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:19:31.003;RED;1603;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:19:30.837;RED;1605;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:16:37.014;RED;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:16:37.013;RED;1603;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:16:36.813;RED;1605;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:14:24.527;RED;1603;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:14:24.527;RED;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:14:24.326;RED;1605;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:14:24.199;RED;1623;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:12:08.627;RED;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:12:08.421;RED;1603;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:12:08.407;RED;1605;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:12:08.199;RED;1623;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:09:36.036;RED;1605;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:09:35.835;RED;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:09:35.835;RED;1623;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:09:35.638;RED;1603;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:06:03.622;RED;1623;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:06:03.621;RED;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T07:06:03.421;RED;1603;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-02-28T06:46:00.659;RED;1623;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:30:12.819;RED;1642;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1634
+Hit;2022-12-14T06:28:35.187;RED;1642;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1634
+Hit;2022-12-14T06:24:29.773;BLUE;1623;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:24:29.574;RED;1646;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:17:18.741;BLUE;1634;;;Unknow;;Light damage;;unknown;
+Hit;2022-12-14T06:17:18.741;BLUE;1488;;;Unknow;;Light damage;;unknown;
+Hit;2022-12-14T06:17:18.581;RED;1642;;;Unknow;;Light damage;;unknown;
+Hit;2022-12-14T06:16:16.058;BLUE;1634;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:16:15.851;RED;1642;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:16:15.837;BLUE;1488;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:15:55.679;RED;1647;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:14:16.016;BLUE;1623;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.911;BLUE;1488; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.698;RED;1642; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.688;BLUE;1623; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.688;BLUE;1625; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.687;BLUE;1608; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.686;BLUE;1638; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.685;BLUE;1636; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.571;RED;1646; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.560;BLUE;1603; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.560;BLUE;1605; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.559;BLUE;1634; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.558;BLUE;1604; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.558;RED;1647; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:12:15.459;RED;1073; (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:25.390;RED;1073;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:25.191;BLUE;1638;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:25.190;BLUE;1488;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.993;BLUE;1636;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.992;BLUE;1603;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.992;RED;1646;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.991;BLUE;1605;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.791;RED;1647;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.769;BLUE;1634;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.767;BLUE;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.766;BLUE;1623;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.765;RED;1642;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.763;BLUE;1625;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:09:24.636;BLUE;1608;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:08:45.171;BLUE;1488;Handgrenade (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:08:45.171;BLUE;1623;Handgrenade (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:08:44.970;RED;1647;Handgrenade (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:08:44.970;RED;1073;Handgrenade (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:08:44.770;BLUE;1636;Handgrenade (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:08:44.558;BLUE;1603;Handgrenade (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:08:44.331;BLUE;1638;Handgrenade (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:05:19.319;RED;1647;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T06:04:18.339;RED;1642;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2022-12-14T06:04:16.809;RED;1642;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2022-12-14T06:03:54.822;RED;1642;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2022-12-14T06:03:24.108;RED;1642;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2022-12-14T06:03:23.202;RED;1642;9mm Pistol (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2022-12-14T05:54:01.833;BLUE;1634;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:27:46.372;BLUE;1608;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:06:26.981;BLUE;1636;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1642
+Hit;2022-12-14T05:00:59.590;BLUE;1623;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.445;BLUE;1642;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.248;BLUE;1623;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.248;RED;1073;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.246;BLUE;1488;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.246;RED;1646;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.051;BLUE;1603;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.050;BLUE;1634;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.050;BLUE;1638;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.049;BLUE;1604;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.048;RED;1647;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:07.047;BLUE;1636;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T05:00:06.961;BLUE;1605;AP-Mine (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T04:58:35.968;RED;1073;Handgrenade (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T04:55:44.722;BLUE;1636;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1642
+Hit;2022-12-14T04:55:41.419;BLUE;1636;ARX-160 (DF);Yes;Unknow;;Near miss;;unknown;1642
+Hit;2022-12-14T04:55:13.033;BLUE;1634;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1642
+Hit;2022-12-14T04:55:07.139;BLUE;1634;ARX-160 (DF);Yes;Unknow;;Near miss;;unknown;1642
+Hit;2022-12-14T04:52:48.132;BLUE;1634;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T04:52:07.787;BLUE;1634;9mm Pistol (DF);Yes;Unknow;;Medium damage;;unknown;1488
+Hit;2022-12-14T04:49:55.701;BLUE;1623;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T04:49:55.499;RED;1647;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2022-12-14T04:40:29.102;BLUE;1636;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1638
+Hit;2022-12-14T04:40:01.859;BLUE;1638;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1636
+Hit;2022-12-14T04:37:43.875;BLUE;1638;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1636
+Hit;2022-12-14T04:37:38.607;BLUE;1638;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1636
+Hit;2022-12-14T04:16:33.466;RED;1647;Suicide Bomber (DF);No;Unknow;;Catastrophic kill;;unknown;
+Marker;2023-04-16T08:55:49.876;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-16T08:40:01.621;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-05T17:25:57.101;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:58:38.271;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:58:04.329;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:58:00.928;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:56:07.085;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:54:27.904;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:53:55.888;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:53:08.471;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:51:11.894;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:48:00.942;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:47:53.632;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:43:19.534;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:42:34.258;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:42:20.034;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:41:59.011;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:41:24.728;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:36:22.694;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:34:45.625;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:34:03.168;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:33:41.691;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:32:22.301;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:32:11.761;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:31:38.513;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:31:26.117;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:31:21.760;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:29:44.994;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:29:33.769;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:28:54.009;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:28:53.159;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-04T18:28:12.271;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:28:10.021;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:28:08.131;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:27:30.184;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:26:32.782;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:24:58.317;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:24:48.401;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:21:29.048;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:21:27.631;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-04T18:21:18.302;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-03T08:09:41.937;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-03T08:09:33.835;;;;;Situation;;;Equip No.: 1604 Hit;arshad;
+Marker;2023-04-03T08:08:15.438;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
+Marker;2023-04-03T08:07:24.268;;;;;Situation;;;Equip No.: 1488 Hit;arshad;
+Marker;2023-04-03T08:06:51.135;;;;;Situation;;;Equip No.: 1488 Hit;arshad;
+Marker;2023-04-03T08:05:04.188;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
+Marker;2023-04-03T08:05:03.226;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
+Marker;2023-04-03T07:59:44.588;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
+Marker;2023-04-03T07:59:43.655;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
+Marker;2023-04-03T07:59:37.221;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
+Marker;2023-04-03T07:59:36.315;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
+Marker;2023-04-03T07:58:29.564;;;;;Situation;;;Equip No.: 1488 Hit;arshad;
+Marker;2023-04-03T07:58:28.655;;;;;Situation;;;Equip No.: 1488 Hit;arshad;
+Marker;2023-04-03T07:58:27.517;;;;;Situation;;;Equip No.: 1488 Hit;arshad;
+Marker;2023-04-03T07:57:31.832;;;;;Situation;;;Equip No.: 1603 Hit;arshad;
+Marker;2023-04-03T07:51:58.504;;;;;Situation;;;Equip No.: 1488 Hit;arshad;
+Marker;2023-04-03T07:46:36.581;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
+Marker;2023-04-03T07:46:35.675;;;;;Situation;;;Equip No.: 1625 Hit;arshad;
