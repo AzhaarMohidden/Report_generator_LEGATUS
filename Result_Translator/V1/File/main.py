@@ -14,6 +14,11 @@ index_file = "1625"
 
 file_directory = ""
 
+NSA_logo_scale = 0.185
+NSA_logo_offset_x = 10
+NSA_logo_offset_y = 10
+
+
 # ///////////////////////Translated
 Catastrophic_kill = "N/A"
 Heavy_damage = "دمار كثير"
@@ -232,6 +237,16 @@ def translator(word):
     else:
         ret_word = word + " / -"
     return ret_word
+
+def exc_header(directory):
+    xl_name = directory + "\Af_results_Header.xlsx"
+    workbook = xl.Workbook(xl_name)
+    sheet = workbook.add_worksheet()
+    sheet.set_row(0, 120)
+    # sheet.write(0, 0, "Hit Type")
+    sheet.insert_image('A1',"NSA_logo.png",  {"x_scale": NSA_logo_scale, "y_scale": NSA_logo_scale})
+    sheet.autofit()
+    workbook.close()
 
 
 def excel_write_after_action(directory):
@@ -517,12 +532,14 @@ def input_start_date():
 if __name__ == '__main__':
     visuals_init()
     file_directory = get_file_directory()
-    get_Participant_IDs(file_directory)
-    # year_st, month_st, day_st = input_start_date()
-    get_csv_events(file_directory)
-    write_range_events_txt(file_directory)
-    excel_write_after_action(file_directory)
 
+    # get_Participant_IDs(file_directory)
+    # get_csv_events(file_directory)
+    # write_range_events_txt(file_directory)
+    # excel_write_after_action(file_directory) #Enable main excel gen
+    exc_header(file_directory)
+
+    # year_st, month_st, day_st = input_start_date()
     print("//////////////////////////////////////////")
     # print(get_participant_data(index_file, "TEAM"))
     # print(get_participant_data(index_file, "AR_NAME"))
