@@ -14,9 +14,9 @@ index_file = "1625"
 
 file_directory = ""
 
-NSA_logo_scale = 0.185
-NSA_logo_offset_x = 10
-NSA_logo_offset_y = 10
+NSA_logo_scale = 0.172
+NSA_logo_offset_x = 14
+NSA_logo_offset_y = 12
 
 
 # ///////////////////////Translated
@@ -244,7 +244,7 @@ def exc_header(directory):
     sheet = workbook.add_worksheet()
     sheet.set_row(0, 120)
     # sheet.write(0, 0, "Hit Type")
-    sheet.insert_image('A1',"NSA_logo.png",  {"x_scale": NSA_logo_scale, "y_scale": NSA_logo_scale})
+    sheet.insert_image('A1',"NSA_logo.png",  {"x_scale": NSA_logo_scale, "y_scale": NSA_logo_scale, 'x_offset': NSA_logo_offset_x, 'y_offset': NSA_logo_offset_y})
     sheet.autofit()
     workbook.close()
 
