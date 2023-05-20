@@ -422,16 +422,23 @@ def exc_header(directory):
     sheet.write((file_lines + 5), 1, "Solider ", cell_format_top_right)
     sheet.write((file_lines + 5), 3, "Hit events ", cell_format_top_left)
     sheet.write((file_lines + 5), 2, "Total Hits ", cell_format_top_middle)
+    line_st = file_lines + 5
+    print(line_st)
     for pan in range(len(Data_participants)):
         # print(Data_participants[pan].get_panid())
         if (Data_participants[pan].get_panid() != "PAN ID"):
             events = read_solider_events_files(directory, Data_participants[pan].get_panid())
-            sheet.write((file_lines + 5) + pan, 1,
-                        Data_participants[pan].get_en_name() + " (" + Data_participants[pan].get_ar_name() + ")",
-                        cell_format_detail_Score_names)
-            sheet.write((file_lines + 5) + pan, 3, events, cell_format_detail_middle_wrap)
             events_c = events.split(':')
-            sheet.write((file_lines + 5) + pan, 2, len(events_c) - 1, cell_format_detail_Score_nums)
+            if(len(events_c) - 1 > 0):
+                line_st = line_st + 1
+                sheet.write(line_st, 1,
+                            Data_participants[pan].get_en_name() + " (" + Data_participants[pan].get_ar_name() + ")",
+                            cell_format_detail_Score_names)
+                sheet.write(line_st, 3, events, cell_format_detail_middle_wrap)
+                sheet.write(line_st, 2, len(events_c) - 1, cell_format_detail_Score_nums)
+                print(line_st)
+
+
             # print(events)
     sheet.autofit()
     workbook.close()
