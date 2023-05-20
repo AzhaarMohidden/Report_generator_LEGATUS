@@ -1,6 +1,10 @@
 import os
 import pandas as pd
 import xlsxwriter as xl
+from datetime import datetime
+
+current_datetime = datetime.now()
+
 
 participants = []
 names = []
@@ -14,9 +18,18 @@ index_file = "1625"
 
 file_directory = ""
 
-NSA_logo_scale = 0.172
-NSA_logo_offset_x = 14
-NSA_logo_offset_y = 12
+Exer_title = "Exercise Title"
+Exer_day = "Day X"
+# Exer_date = "dd/mm/yyyy"
+Exer_date = str(current_datetime.day) + "/" + str(current_datetime.month) + "/" + str(current_datetime.year)
+
+NSA_logo_scale = 0.095
+NSA_logo_offset_x = 0
+NSA_logo_offset_y = 0
+
+RBAT_logo_scale = 0.65
+RBAT_logo_offset_x = 0
+RBAT_logo_offset_y = 0
 
 
 # ///////////////////////Translated
@@ -238,15 +251,191 @@ def translator(word):
         ret_word = word + " / -"
     return ret_word
 
+def time_adjuster(time):
+    try:
+        time_split = time.split("T")
+        Event_date = time_split[0]
+        Event_time = time_split[1]
+        Event_time_split = Event_time.split(":")
+        Event_time_split_hr = Event_time_split[0]
+        Event_time_split_hr_corrected = int(Event_time_split_hr) + 3
+        Event_time = str(Event_time_split_hr_corrected) + ":" + Event_time_split[1] + ":" + Event_time_split[2]
+        Event_moment = Event_date + " @ " + Event_time
+        return Event_moment
+    except:
+        Event_moment = "Time Error"
+        return Event_moment
 def exc_header(directory):
     xl_name = directory + "\Af_results_Header.xlsx"
+    filtered_text_file = open(directory + "\Filtered_txt.txt", encoding='utf-8')
+    filtered_text_file = filtered_text_file.read().split("\n")
+    file_lines = len(filtered_text_file)
     workbook = xl.Workbook(xl_name)
     sheet = workbook.add_worksheet()
-    sheet.set_row(0, 120)
+    sheet.set_column('A:A', 8)
+    sheet.set_column('B:B', 25)
+    sheet.set_column('C:C', 19)
+    sheet.set_column('D:D', 23)
+    sheet.set_column('E:E', 17)
+    sheet.set_column('F:F', 26.5)
+    sheet.set_column('G:G', 17)
+    sheet.set_column('H:H', 20)
+    sheet.set_column('I:I', 30)
+    sheet.set_column('J:J', 15)
+    sheet.set_column('K:K', 25)
+    sheet.set_row(0, 71)
+    sheet.set_row(1, 25)
+    cell_format_top = workbook.add_format(
+        {'bold': True, 'font_color': 'black', 'font_size': '14', 'bg_color': '#72E5F4'})
+    cell_format_top_right = workbook.add_format(
+        {'bold': True, 'font_color': 'black', 'font_size': '14', 'bg_color': '#72E5F4', 'bottom': 2, 'left': 2,
+         'right': 1, 'top': 2})
+    cell_format_top_middle = workbook.add_format(
+        {'bold': True, 'font_color': 'black', 'font_size': '14', 'bg_color': '#72E5F4', 'bottom': 2, 'left': 1,
+         'right': 1, 'top': 2})
+    cell_format_top_left = workbook.add_format(
+        {'bold': True, 'font_color': 'black', 'font_size': '14', 'bg_color': '#72E5F4', 'bottom': 2, 'left': 1,
+         'right': 2, 'top': 2})
+    cell_format_detail_right = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'font_size': '12', 'bottom': 1, 'left': 2, 'right': 1})
+    cell_format_detail_right_No = workbook.add_format(
+        {'bold': False,'align': 'center', 'font_color': 'black', 'font_size': '12', 'bottom': 1, 'left': 2, 'right': 1})
+    cell_format_detail_middle = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 1, 'left': 1,
+         'right': 1})
+    cell_format_detail_Score_names = workbook.add_format(
+        {'bold': True, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'valign': 'vcenter',
+         'font_size': '14', 'bottom': 1, 'left': 2, 'right': 1, 'top': 2})
+    cell_format_detail_Score_nums = workbook.add_format(
+        {'bold': True, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'valign': 'vcenter',
+         'font_size': '18', 'bottom': 2, 'left': 1, 'right': 1, 'top': 1})
+    cell_format_detail_middle_wrap = workbook.add_format(
+        {'bold': False, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 2,
+         'left': 1, 'right': 2, 'top': 1})
+    cell_format_detail_left = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 1, 'left': 1,
+         'right': 2})
+    cell_format_detail_middle_party_blue = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bg_color': 'blue', 'bottom': 1,
+         'left': 1, 'right': 1})
+    cell_format_detail_middle_party_red = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bg_color': 'red', 'bottom': 1,
+         'left': 1, 'right': 1})
+    cell_format_detail_middle_FF_yellow = workbook.add_format(
+        {'bold': False,'text_wrap': True, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bg_color': 'yellow', 'bottom': 1,
+         'left': 1, 'right': 1})
     # sheet.write(0, 0, "Hit Type")
+    Title = Exer_title + ": "+ Exer_day + "\n" + "        "+Exer_date
     sheet.insert_image('A1',"NSA_logo.png",  {"x_scale": NSA_logo_scale, "y_scale": NSA_logo_scale, 'x_offset': NSA_logo_offset_x, 'y_offset': NSA_logo_offset_y})
+    sheet.insert_image('I1',"RBAT_logo.jpeg",  {"x_scale": RBAT_logo_scale, "y_scale": RBAT_logo_scale, 'x_offset': RBAT_logo_offset_x, 'y_offset': RBAT_logo_offset_y})
+    text = Title   #"Excercise Title: Excercise \n        dd/mm/yy"
+    options = {
+        "x_offset": 15,
+        "y_offset": 0,
+        "width": 497,
+        "height": 88,
+        "fill": {"none": True},
+        "font": {
+            "bold": False,
+            "italic": False,
+            "name": "Calibri (Body)",
+            "color": "black",
+            "size": 24,
+        },
+        "align": {"vertical": "middle", "horizontal": "center"},
+    }
+    sheet.insert_textbox(0, 3, text, options)
+    sheet.write(1, 0, "No.", cell_format_top_right)
+    sheet.write(1, 1, "Shooter Name (الرامي)", cell_format_top_middle)
+    sheet.write(1, 2, "Shooter PAN ID", cell_format_top_middle)
+    sheet.write(1, 3, "Shooter Party", cell_format_top_middle)
+    sheet.write(1, 4, "Status (حالة الإصابة)", cell_format_top_middle)
+    sheet.write(1, 5, "Victim Name (المصاب)", cell_format_top_middle)
+    sheet.write(1, 6, "Victim PAN ID", cell_format_top_middle)
+    sheet.write(1, 7, "Victim Party", cell_format_top_middle)
+    sheet.write(1, 8, "Time", cell_format_top_left)
+    for d in range(file_lines - 1):
+        parsed_event = filtered_text_file[d].split(";")
+        # print(parsed_event)
+        for crc in range(len(parsed_event)):
+            if (parsed_event[crc] == ""):
+                if (crc == 11):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+            # print(parsed_event[crc])
+            # print("parsed_event[crc]")
+            hit_typ = translator(parsed_event[8])
+        sheet.write(d + 2, 0, d+1, cell_format_detail_right_No)  # Hit Type Call arabic method
+        # sheet.write(d + 2, 4, str(hit_typ), cell_format_detail_right)  # Hit Type Call arabic method *****
+        sheet.write(d + 2, 2, int(parsed_event[11]), cell_format_detail_middle)
+        try:
+            sheet.write(d + 2, 1, str(str(get_participant_data(str(parsed_event[11]), "EN_NAME")) + " (" + str(
+                get_participant_data(str(parsed_event[11]), "AR_NAME")) + ")"), cell_format_detail_middle)
+        except:
+            sheet.write(d + 2, 1, "Solider" + " (" + "Not in ORBAT" + ")", cell_format_detail_middle)
+        try:
+            if (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue" or str(
+                    get_participant_data(str(parsed_event[11]), "TEAM")) == "BLUE"):
+                sheet.write(d + 2, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                            cell_format_detail_middle_party_blue)
+            elif (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red" or str(
+                    get_participant_data(str(parsed_event[11]), "TEAM")) == "RED"):
+                sheet.write(d + 2, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                            cell_format_detail_middle_party_red)
+            else:
+                sheet.write(d + 2, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                            cell_format_detail_middle)
+        except:
+            sheet.write(d + 2, 3, "Party", cell_format_detail_middle)
+        if (parsed_event[5] == "No"):
+            sheet.write(d + 2, 4, str(hit_typ), cell_format_detail_middle)
+        elif (parsed_event[5] == "Yes"):
+            sheet.write(d + 2, 4, str(hit_typ), cell_format_detail_middle_FF_yellow)
+        else:
+            sheet.write(d + 2, 4, str(hit_typ), cell_format_detail_middle)
+        # sheet.write(d + 2, 11, parsed_event[4], cell_format_detail_middle) #re locate # Weapon data
+        sheet.write(d + 2, 6, int(parsed_event[3]), cell_format_detail_middle)
+        try:
+            sheet.write(d + 2, 5, str(str(get_participant_data(str(parsed_event[3]), "EN_NAME")) + " (" + str(
+                get_participant_data(str(parsed_event[3]), "AR_NAME")) + ")"), cell_format_detail_middle)
+        except:
+            sheet.write(d + 2, 5, "Solider" + " (" + "N/A" + ")", cell_format_detail_middle)
+        # sheet.write(d + 2, 8, int(parsed_event[3]), cell_format_detail_middle)
+        try:
+            if (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue" or str(
+                    get_participant_data(str(parsed_event[3]), "TEAM")) == "BLUE"):
+                sheet.write(d + 2, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                            cell_format_detail_middle_party_blue)
+            elif (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red" or str(
+                    get_participant_data(str(parsed_event[3]), "TEAM")) == "RED"):
+                sheet.write(d + 2, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                            cell_format_detail_middle_party_red)
+            else:
+                sheet.write(d + 2, 7, "Party", cell_format_detail_middle)
+        except:
+            sheet.write(d + 2, 7, "N/A", cell_format_detail_middle)
+        # sheet.write(d + 2, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
+        Event_Times = time_adjuster(parsed_event[1])
+        sheet.write(d + 2, 8, Event_Times, cell_format_detail_left)
+        write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3])
+    sheet.write((file_lines + 5), 1, "Solider ", cell_format_top_right)
+    sheet.write((file_lines + 5), 3, "Hit events ", cell_format_top_left)
+    sheet.write((file_lines + 5), 2, "Total Hits ", cell_format_top_middle)
+    for pan in range(len(Data_participants)):
+        # print(Data_participants[pan].get_panid())
+        if (Data_participants[pan].get_panid() != "PAN ID"):
+            events = read_solider_events_files(directory, Data_participants[pan].get_panid())
+            sheet.write((file_lines + 5) + pan, 1,
+                        Data_participants[pan].get_en_name() + " (" + Data_participants[pan].get_ar_name() + ")",
+                        cell_format_detail_Score_names)
+            sheet.write((file_lines + 5) + pan, 3, events, cell_format_detail_middle_wrap)
+            events_c = events.split(':')
+            sheet.write((file_lines + 5) + pan, 2, len(events_c) - 1, cell_format_detail_Score_nums)
+            # print(events)
     sheet.autofit()
     workbook.close()
+    print("Excel File Generated..")
 
 
 def excel_write_after_action(directory):
@@ -293,9 +482,9 @@ def excel_write_after_action(directory):
          'font_size': '14', 'bottom': 1, 'left': 1, 'right': 1, 'top': 2})
     cell_format_detail_Score_nums = workbook.add_format(
         {'bold': True, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'valign': 'vcenter',
-         'font_size': '18', 'bottom': 1, 'left': 1, 'right': 2, 'top': 1})
+         'font_size': '18', 'bottom': 2, 'left': 1, 'right': 1, 'top': 1})
     cell_format_detail_middle_wrap = workbook.add_format(
-        {'bold': False, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 1,
+        {'bold': False, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 2,
          'left': 1, 'right': 1, 'top': 2})
     cell_format_detail_left = workbook.add_format(
         {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 1, 'left': 1,
@@ -401,6 +590,22 @@ def excel_write_after_action(directory):
     sheet.autofit()
     workbook.close()
 
+
+def get_Exercise_Title():
+    global Exer_title
+
+    try:
+        Exer_title = str(input("Please input Exercise Name (e.g. ABMMC, Battlcamp, et. ) : "))
+    except:
+        print("Wrong input type..")
+        Exer_title = "Exercise"
+def get_Exercise_day():
+    global Exer_day
+    try:
+        Exer_day = str(input("Please input Exercise Day (e.g. Day 1, Final , etc. ) : "))
+    except:
+        Exer_day = "Day 0"
+        print("Wrong Input type...")
 
 def get_csv_events(directory):
     csv_event_file_name = directory + "\CSV\csv_events.txt"
@@ -532,11 +737,12 @@ def input_start_date():
 if __name__ == '__main__':
     visuals_init()
     file_directory = get_file_directory()
-
-    # get_Participant_IDs(file_directory)
-    # get_csv_events(file_directory)
-    # write_range_events_txt(file_directory)
-    # excel_write_after_action(file_directory) #Enable main excel gen
+    get_Exercise_Title()
+    get_Exercise_day()
+    get_Participant_IDs(file_directory)
+    get_csv_events(file_directory)
+    write_range_events_txt(file_directory)
+    #excel_write_after_action(file_directory) #Enable main excel gen
     exc_header(file_directory)
 
     # year_st, month_st, day_st = input_start_date()
