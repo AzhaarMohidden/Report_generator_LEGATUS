@@ -1,3 +1,5 @@
 
 Heavy damage: 1619
 Near miss: 1619
+Heavy damage: 1619
+Near miss: 1619

@@ -2,3 +2,7 @@
 Heavy damage: 1578 (FF)
 Catastrophic kill: 1578 (FF)
 Heavy damage: 1624
+Heavy damage: 1578 (FF)
+Near miss: 1578 (FF)
+Catastrophic kill: 1578 (FF)
+Heavy damage: 1624

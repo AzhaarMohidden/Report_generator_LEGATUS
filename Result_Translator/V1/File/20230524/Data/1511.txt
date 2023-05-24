@@ -2,3 +2,6 @@
 Catastrophic kill: 1628
 Medium damage: 1628
 Heavy damage: 1628
+Medium damage: 1628
+Heavy damage: 1628
+Catastrophic kill: 1628

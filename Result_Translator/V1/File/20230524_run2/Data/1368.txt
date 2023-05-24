@@ -1,0 +1,4 @@
+
+Heavy damage: 1578 (FF)
+Catastrophic kill: 1578 (FF)
+Heavy damage: 1624

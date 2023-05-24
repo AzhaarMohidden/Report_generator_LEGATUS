@@ -32,6 +32,10 @@ RBAT_logo_offset_x = 0
 RBAT_logo_offset_y = 0
 
 
+start_range = 0
+end_range = 0
+
+
 # ///////////////////////Translated
 Catastrophic_kill = "ضربة قاتلة"
 Heavy_damage = "دمار كثير"
@@ -1135,7 +1139,7 @@ def exc_header(directory):
     sheet.set_column('A:A', 8)
     sheet.set_column('B:B', 25)
     sheet.set_column('C:C', 19)
-    sheet.set_column('D:D', 23)
+    sheet.set_column('D:D', 27)
     sheet.set_column('E:E', 17)
     sheet.set_column('F:F', 26.5)
     sheet.set_column('G:G', 17)
@@ -1278,7 +1282,7 @@ def exc_header(directory):
         # sheet.write(d + 2, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
         Event_Times = time_adjuster(parsed_event[1])
         sheet.write(d + 2, 8, Event_Times, cell_format_detail_left)
-        write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3])
+        # write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3], parsed_event[5]) # **************************** Disabled for Dual Generations
     sheet.write((file_lines + 5), 1, "Solider ", cell_format_top_right)
     sheet.write((file_lines + 5), 3, "Hit events ", cell_format_top_left)
     sheet.write((file_lines + 5), 2, "Total Hits ", cell_format_top_middle)
@@ -1475,6 +1479,8 @@ def get_Exercise_day():
         print("Wrong Input type...")
 
 def get_csv_events(directory):
+    global start_range
+    global end_range
     csv_event_file_name = directory + "\CSV\csv_events.txt"
     csv_event_file = open(csv_event_file_name, encoding='utf-8')
     data_full = csv_event_file.read()
@@ -1495,8 +1501,10 @@ def get_csv_events(directory):
     # for l in range(100):
     #     data = csv_event_file.readline()
     #     print(data)
-    start_range = int(input("Enter the starting line (HIGHER): "))
-    end_range = int(input("Enter the ending line (LOWER): "))
+    if((start_range == 0) & (end_range == 0)):
+        start_range = int(input("Enter the starting line (HIGHER): "))
+        end_range = int(input("Enter the ending line (LOWER): "))
+
     for s in range(start_range - (end_range - 1)):
         element = start_range - s
         # print(element)
@@ -1617,6 +1625,8 @@ if __name__ == '__main__':
     write_range_events_txt(file_directory)
     #excel_write_after_action(file_directory) #Enable main excel gen
     exc_header_V2(file_directory)
+
+    exc_header(file_directory)
 
     # year_st, month_st, day_st = input_start_date()
     print("//////////////////////////////////////////")

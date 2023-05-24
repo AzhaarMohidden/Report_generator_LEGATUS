@@ -1,3 +1,5 @@
 
 Catastrophic kill: 1627
 Heavy damage: 1627
+Heavy damage: 1627
+Catastrophic kill: 1627

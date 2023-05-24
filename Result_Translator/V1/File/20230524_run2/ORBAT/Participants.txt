@@ -1,0 +1,108 @@
+SI	PAN ID	PARTY	NAME	ARABIC NAME
+1	1060	Blue	Abdulrahman Awad Mesfer	عبدالرحمن عوض مسفر 
+2	1117	Blue	Mohammed Abdulla Hassan 	محمد عبدالله حسن 
+3	1120	Blue	Jassim Mohammed Khaled	جاسم محمد خالد
+4	1291	Blue	Mohamed Khalfan Rashid 	محمد خلفان راشد 
+5	1344	Blue	Abdulaziz Mohammed Farhan	عبدالعزيز محمد فرحان 
+6	1347	Blue	Saud Ibrahim Ali	سعود ابراهيم علي
+7	1354	Blue	Abdulla Rashid Abdulla 	عبدالله راشد عبدالله 
+8	1426	Blue	Khaled Ali Abdulla 	خالد علي عبدالله 
+9	1481	Blue	Abdulhadi Saad Abdulhadi	عبدالهادي سعد عبدالهادي
+10	1502	Blue	Khaleel Hadi Nasser 	خليل هادي ناصر 
+11	1511	Blue	Mohammed Hamad Mohammed 	محمد حمد محمد
+12	1518	Blue	Talal Khalid Muzel 	طلال خالد مزعل
+13	1535	Blue	Tamim Ahmed Ali	تميم احمد علي
+14	1536	Blue	Mohammed Mubarak Fadgoush 	محمد مبارك فدغوش 
+15	1540	Blue	Abdulrahman Abdulla Saeed 	عبدالرحمن عبدالله سعيد
+16	1550	Blue	Zayed Mohammed Abdulla 	زايد محمد عبدالله 
+17	1551	Blue	Ali Saeed Saleh 	علي سعيد صالح
+18	1552	Blue	Ahmed Abdulla Ali	احمد عبدالله علي 
+19	1577	Blue	Abdulaziz Mansour Sultan	عبدالعزيز منصور سلطان
+20	1582	Blue	Saud Khaled Abdulaziz 	سعود خالد عبدالعزيز 
+21	1588	Blue	Saad Ibrahim Mohammed 	سعد ابراهيم محمد 
+22	1590	Blue	Sultan Abdulla Hassan 	سلطان عبدالله حسن 
+23	1604	Blue	Hassan Ahmed Hassan 	حسن احمد حسن 
+24	1607	Blue	Hamad Thabt Mohammed 	حمد ضابت محمد 
+25	1608	Blue	Jassim Mohammed Ahmed 	جاسم محمد احمد
+26	1609	Blue	Hassan Abdulla Hassan 	حسن عبدالله حسن 
+27	1019	Blue	Mohammed Abdulrahman Mohammed 	محمد عبدالرحمن محمد
+28	1102	Blue	Jassim Jaber Ahmed	جاسم جبر احمد
+29	1112	Blue	Abdulaziz Nasser Awad	عبدالعزيز ناصر عواد
+30	1123	Blue	Saqer Ali Saqer	صقر علي صقر 
+31	1282	Blue	Salman Abdulla Salman	سلمان عبدالله سلمان
+32	1285	Blue	Hamad Meret Fahad	حمد مريط فهد
+33	1346	Blue	Jassim Abdulla Jassim	جاسم عبدالله جاسم
+34	1352	Blue	Abdulla Ahmed Youssif	عبدالله احمد يوسف 
+35	1359	Blue	Abdulla Khalifa Saad 	عبدالله خليفة سعد
+36	1364	Blue	Mohammed Abdulla Mohammed 	محمد عبدالله محمد 
+37	1365	Blue	Ahmed Zamel Ibrahim	احمد زامل ابراهيم 
+38	1366	Blue	Nasser Ahmed Khalf 	ناصر احمد خلف 
+39	1367	Blue	Abdulla Mahmoud Mthana	عبدالله محمود مثنى 
+40	1380	Blue	Abdulla Bader Salem 	عبدالله بدر سالم 
+41	1412	Blue	Mohammed Ibrahim Mohammed 	محمد ابراهيم محمد
+42	1537	Blue	Hamad Ali Mubarak 	حمد علي مبارك
+43	1541	Blue	Faisal Hamad Saud 	فيصل حمد سعود
+44	1544	Blue	Kahaled Rashid Hamad 	خالد راشد حمد 
+45	1549	Blue	Saleh Helal Ali	صالح هلال علي 
+46	1568	Blue	Ibrahim Essa Abdulla 	ابراهيم عيسى عبدالله 
+47	1078	Blue	Abdulla Essa Abdulla 	عبدالله عيسى عبدالله
+48	1104	Blue	Mubarak Saeed Mohammed 	مبارك سعيد محمد
+49	1276	Blue	Abdulla Mohammed Abaad 	عبدالله محمد عباد
+50	1278	Blue	Mohammed Ali Khalifa 	محمد علي خليفة 
+51	1287	Blue	Jassim Abdulla Youssif	جاسم عبدالله يوسف
+52	1288	Blue	Mubarak Hmyed Mohammed 	مبارك حميد محمد 
+53	1345	Blue	Mohammed Adel Mohammed 	محمد عادل محمد 
+54	1348	Blue	Mohammed Hamad Abdullateef 	محمد حمد عبداللطيف
+55	1379	Blue	Ali Ajlan Mubark 	علي عجلان مبارك
+56	1382	Blue	Omar Abdulaziz Abdulla 	عمر عبدالعزيز عبدالله 
+57	1383	Blue	Mohammed Rashid Ali	محمد راشد علي 
+58	1419	Blue	Mohammed Hassan Jaber 	محمد حسن جابر 
+59	1484	Blue	Ganim Saleh Khmees	غانم صالح خميس 
+60	1488	Blue	Abdulrahman Fahad Mohammed	عبدالرحمن فهد محمد
+61	1512	Blue	Raed Mohammed Hamed	رائد محمد حامد
+62	1519	Blue	Ali Hassan Ali	علي حسن علي 
+63	1525	Blue	Yousif Hassan Youssif 	يوسف حسن يوسف
+64	1546	Blue	Abdulrahman Majed Khaleefa 	عبدالرحمن ماجد خليفة 
+65	1553	Blue	Mubark Hamad Kleyfekh 	مبارك حمد كليفيخ
+66	1560	Blue	Abdulhadi Mohammed Abdulla 	عبدالهادي محمد عبدالله 
+67	1578	Blue	Hamad Mohammed Hamad	حمد محمد حمد 
+68	1584	Blue	Ali Saeed Ali	علي سعيد علي 
+69	1589	Blue	Youssif Rashid Hamad	يوسف راشد حمد
+70	1595	Blue	Nasser Saleh Nasser 	ناصر صالح ناصر 
+71	1618	Blue	Amyer Mohammed Abdulla 	عمير محمد عبدالله 
+72	1647	Blue	Khaled Essa Mohammed	خالد عيسى محمد
+73	1052	Blue	Mesfer Abdulla Mesfer	مسفر عبدالله مسفر
+74	1053	Blue	Abdulla Jaber Abdulla	عبدالله جابر عبدالله 
+75	1061	Blue	Hassan Youssif Hussien	حسن يوسف حسين
+76	1074	Blue	Mohammed Saleh Mohamed 	محمد صالح محمد 
+77	1077	Blue	Talal Hazza Dawood	طلال هزاع داود
+78	1277	Blue	Mubarak Mansour Mubarak	مبارك منصور مبارك 
+79	1283	Blue	Ahmed Taleb Nasser	احمد طالب ناصر
+80	1368	Blue	Hamad Fadel Saleh 	حمد فاضل صالح
+81	1369	Blue	Hamad Khalifa Muhana 	حمد خليفة مهنا
+82	1371	Blue	Mohammed Ali Tableb 	محمد علي طالب 
+83	1372	Blue	Hamad Khalifa Hamad 	حمد خليفة حمد 
+84	1373	Blue	Mohammed Youssif Mohammed 	محمد يوسف محمد 
+85	1374	Blue	Salem Abdulla Hzaam 	سالم عبدالله حزام
+86	1378	Blue	Saad khalid Saad	سعد خالد سعد
+87	1381	Blue	Mohammed Ganim Jassim	محمد غانم جاسم 
+88	1445	Blue	Mansour Mohamed Essa 	منصور محمد عيسى 
+89	1479	Blue	Abdulla Saleh Ali	عبدالله صالح علي 
+90	1526	Blue	Abdulla Essa Abdulla 	عبدالله عيسى عبدالله
+91	1539	Blue	Abdulla Ateeq Abdulla 	عبدالله عتيق عبدالله 
+92	1543	Blue	Abdulrahman Saud Nasser 	عبدالرحمن سعود ناصر 
+93	1545	Blue	Turkey Abdulla Essa 	تركي عبدالله عيسى
+94	1547	Blue	Talal Jaber Khmees	طلال جابر خميس 
+95	1548	Blue	Jassim Sami Mohammed 	جاسم سامى محمد
+96	1562	Blue	Abdulla Hadi Theeb 	عبدالله هادي ذيب 
+97	1579	Blue	Fahad Hassan Naser 	فهد حسن نصر 
+98	1619	Red	Enemy	العدو
+99	1621	Red	Enemy	العدو
+100	1624	Red	Enemy	العدو
+101	1627	Red	Enemy	العدو
+102	1628	Red	Enemy	العدو
+103	1630	Red	Enemy	العدو
+104	1631	Red	Enemy	العدو
+105	1632	Red	Enemy	العدو
+106	1633	Red	Enemy	العدو
+107	1636	Red	Enemy	العدو
