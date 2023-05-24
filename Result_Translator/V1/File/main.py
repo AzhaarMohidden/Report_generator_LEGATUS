@@ -33,7 +33,7 @@ RBAT_logo_offset_y = 0
 
 
 # ///////////////////////Translated
-Catastrophic_kill = "N/A"
+Catastrophic_kill = "ضربة قاتلة"
 Heavy_damage = "دمار كثير"
 Medium_damage = "دمار متواسط"
 Light_damage = "N/A"
@@ -165,9 +165,12 @@ def write_solider_events_files_initial(directory, panid):
     solider_file.close()
 
 
-def write_solider_events_files(directory, panid, event, victim):
+def write_solider_events_files(directory, panid, event, victim, FF):
     solider_file = open(directory + "\Data" + "\\" + str(panid) + ".txt", 'a', encoding='utf-8')
-    solider_file.writelines(str(event) + ": " + str(victim))
+    if(FF == "Yes"):
+        solider_file.writelines(str(event) + ": " + str(victim) + " (FF)")
+    else:
+        solider_file.writelines(str(event) + ": " + str(victim))
     solider_file.writelines("\n")
     solider_file.close()
 
@@ -265,6 +268,863 @@ def time_adjuster(time):
     except:
         Event_moment = "Time Error"
         return Event_moment
+def exc_header_V2(directory):
+    xl_name = directory + "\Af_results_Header_v2.xlsx"
+    filtered_text_file = open(directory + "\Filtered_txt.txt", encoding='utf-8')
+    filtered_text_file = filtered_text_file.read().split("\n")
+    file_lines = len(filtered_text_file)
+    workbook = xl.Workbook(xl_name)
+    sheet = workbook.add_worksheet()
+    sheet.set_column('A:A', 8)
+    sheet.set_column('B:B', 25)
+    sheet.set_column('C:C', 19)
+    sheet.set_column('D:D', 27)
+    sheet.set_column('E:E', 17)
+    sheet.set_column('F:F', 26.5)
+    sheet.set_column('G:G', 17)
+    sheet.set_column('H:H', 20)
+    sheet.set_column('I:I', 30)
+    sheet.set_column('J:J', 15)
+    sheet.set_column('K:K', 25)
+    sheet.set_row(0, 71)
+    sheet.set_row(1, 25)
+    cell_format_top = workbook.add_format(
+        {'bold': True, 'font_color': 'black', 'font_size': '14', 'bg_color': '#72E5F4'})
+    cell_format_top_right = workbook.add_format(
+        {'bold': True, 'font_color': 'black', 'font_size': '14', 'bg_color': '#72E5F4', 'bottom': 2, 'left': 2,
+         'right': 1, 'top': 2})
+    cell_format_top_middle = workbook.add_format(
+        {'bold': True, 'font_color': 'black', 'font_size': '14', 'bg_color': '#72E5F4', 'bottom': 2, 'left': 1,
+         'right': 1, 'top': 2})
+    cell_format_top_left = workbook.add_format(
+        {'bold': True, 'font_color': 'black', 'font_size': '14', 'bg_color': '#72E5F4', 'bottom': 2, 'left': 1,
+         'right': 2, 'top': 2})
+    cell_format_detail_right = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'font_size': '12', 'bottom': 1, 'left': 2, 'right': 1})
+    cell_format_detail_right_No = workbook.add_format(
+        {'bold': False,'align': 'center', 'font_color': 'black', 'font_size': '12', 'bottom': 1, 'left': 2, 'right': 1})
+    cell_format_detail_middle = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 1, 'left': 1,
+         'right': 1})
+    cell_format_detail_Score_names = workbook.add_format(
+        {'bold': True, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'valign': 'vcenter',
+         'font_size': '14', 'bottom': 1, 'left': 2, 'right': 1, 'top': 2})
+    cell_format_detail_Score_nums = workbook.add_format(
+        {'bold': True, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'valign': 'vcenter',
+         'font_size': '18', 'bottom': 2, 'left': 1, 'right': 1, 'top': 1})
+    cell_format_detail_middle_wrap = workbook.add_format(
+        {'bold': False, 'text_wrap': True, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 2,
+         'left': 1, 'right': 2, 'top': 1})
+    cell_format_detail_left = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bottom': 1, 'left': 1,
+         'right': 2})
+    cell_format_detail_middle_party_blue = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bg_color': 'blue', 'bottom': 1,
+         'left': 1, 'right': 1})
+    cell_format_detail_middle_party_red = workbook.add_format(
+        {'bold': False, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bg_color': 'red', 'bottom': 1,
+         'left': 1, 'right': 1})
+    cell_format_detail_middle_FF_yellow = workbook.add_format(
+        {'bold': False,'text_wrap': True, 'font_color': 'black', 'align': 'center', 'font_size': '12', 'bg_color': 'yellow', 'bottom': 1,
+         'left': 1, 'right': 1})
+    cell_format_banner_seperator_right = workbook.add_format(
+        {'bold': True,'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '16', 'bg_color': '#FCD5B4', 'bottom': 1,
+         'left': 0, 'right': 2})
+    cell_format_banner_seperator_middle = workbook.add_format(
+        {'bold': True, 'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '16',
+         'bg_color': '#FCD5B4', 'bottom': 1,
+         'left': 0, 'right': 0})
+    cell_format_banner_seperator_left = workbook.add_format(
+        {'bold': True, 'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '14',
+         'bg_color': '#FCD5B4', 'bottom': 1,
+         'left': 2, 'right': 0})
+    # //////////////////////
+    cell_format_no_events_right = workbook.add_format(
+        {'bold': False, 'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '14',
+         'bg_color': '#FF7C80', 'bottom': 1,
+         'left': 0, 'right': 2})
+    cell_format_no_events_middle = workbook.add_format(
+        {'bold': False, 'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '14',
+         'bg_color': '#FF7C80', 'bottom': 1,
+         'left': 0, 'right': 0})
+    cell_format_no_events_left = workbook.add_format(
+        {'bold': False, 'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '14',
+         'bg_color': '#FF7C80', 'bottom': 1,
+         'left': 2, 'right': 0})
+
+    #//////////////////////////////////
+    cell_format_no_events_GR_right = workbook.add_format(
+        {'bold': False, 'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '14',
+         'bg_color': '#00FF99', 'bottom': 1,
+         'left': 0, 'right': 2})
+    cell_format_no_events_GR_middle = workbook.add_format(
+        {'bold': False, 'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '14',
+         'bg_color': '#00FF99', 'bottom': 1,
+         'left': 0, 'right': 0})
+    cell_format_no_events_GR_left = workbook.add_format(
+        {'bold': False, 'text_wrap': False, 'font_color': 'black', 'align': 'center', 'font_size': '14',
+         'bg_color': '#00FF99', 'bottom': 1,
+         'left': 2, 'right': 0})
+
+    # sheet.write(0, 0, "Hit Type")
+    Title = Exer_title + ": "+ Exer_day + "\n" + "        "+Exer_date
+    sheet.insert_image('A1',"NSA_logo.png",  {"x_scale": NSA_logo_scale, "y_scale": NSA_logo_scale, 'x_offset': NSA_logo_offset_x, 'y_offset': NSA_logo_offset_y})
+    sheet.insert_image('I1',"RBAT_logo.jpeg",  {"x_scale": RBAT_logo_scale, "y_scale": RBAT_logo_scale, 'x_offset': RBAT_logo_offset_x, 'y_offset': RBAT_logo_offset_y})
+    text = Title   #"Excercise Title: Excercise \n        dd/mm/yy"
+    options = {
+        "x_offset": 15,
+        "y_offset": 0,
+        "width": 497,
+        "height": 88,
+        "fill": {"none": True},
+        "font": {
+            "bold": False,
+            "italic": False,
+            "name": "Calibri (Body)",
+            "color": "black",
+            "size": 24,
+        },
+        "align": {"vertical": "middle", "horizontal": "center"},
+    }
+    sheet.insert_textbox(0, 3, text, options)
+    sheet.write(1, 0, "No.", cell_format_top_right)
+    sheet.write(1, 1, "Shooter Name (الرامي)", cell_format_top_middle)
+    sheet.write(1, 2, "Shooter PAN ID", cell_format_top_middle)
+    sheet.write(1, 3, "Shooter Party", cell_format_top_middle)
+    sheet.write(1, 4, "Status (حالة الإصابة)", cell_format_top_middle)
+    sheet.write(1, 5, "Victim Name (المصاب)", cell_format_top_middle)
+    sheet.write(1, 6, "Victim PAN ID", cell_format_top_middle)
+    sheet.write(1, 7, "Victim Party", cell_format_top_middle)
+    sheet.write(1, 8, "Time", cell_format_top_left)
+    m = 2
+    # ////////Friendly fire Banner
+    sheet.write(m, 0, "", cell_format_banner_seperator_left)
+    sheet.write(m, 1, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 2, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 3, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 4, "Friendly Fire (Blue > Blue)", cell_format_banner_seperator_middle)
+    sheet.write(m, 5, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 6, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 7, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 8, "", cell_format_banner_seperator_right)
+    Num_counter = 0
+    Freindly_fire_events = 0
+    Catastrophic_kill_events_B_R = 0
+    Catastrophic_kill_events_R_B = 0
+    Wounding_events_B_R = 0
+    Wounding_events_R_B = 0
+    Near_miss_events_B_R = 0
+    Near_miss_events_R_B = 0
+
+    # ////////////////////////////////////////////Friendly Fire Gen
+    for d in range(file_lines - 1):
+        parsed_event = filtered_text_file[d].split(";")
+        # print(parsed_event)
+        for crc in range(len(parsed_event)): #check for invalid chars in a parsed array
+            if (parsed_event[crc] == ""):
+                if (crc == 11):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+            # print(parsed_event[crc])
+            # print("parsed_event[crc]")
+            hit_typ = translator(parsed_event[8])
+        if(((parsed_event[5] == "Yes") & (parsed_event[8] != "Near miss")) & (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue") & (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue")):
+            m = m + 1
+            Num_counter = Num_counter + 1
+            Freindly_fire_events = Freindly_fire_events + 1
+            print("FoundFF")
+            sheet.write(m, 0, Num_counter, cell_format_detail_right_No)  # Hit Type Call arabic method
+            # sheet.write(m, 4, str(hit_typ), cell_format_detail_right)  # Hit Type Call arabic method *****
+            sheet.write(m, 2, int(parsed_event[11]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 1, str(str(get_participant_data(str(parsed_event[11]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[11]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 1, "Solider" + " (" + "Not in ORBAT" + ")", cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "RED"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle)
+            except:
+                sheet.write(m, 3, "Party", cell_format_detail_middle)
+            if (parsed_event[5] == "No"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            elif (parsed_event[5] == "Yes"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle_FF_yellow)
+            else:
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            # sheet.write(m, 11, parsed_event[4], cell_format_detail_middle) #re locate # Weapon data
+            sheet.write(m, 6, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 5, str(str(get_participant_data(str(parsed_event[3]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[3]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 5, "Solider" + " (" + "N/A" + ")", cell_format_detail_middle)
+            # sheet.write(m, 8, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "RED"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 7, "Party", cell_format_detail_middle)
+            except:
+                sheet.write(m, 7, "N/A", cell_format_detail_middle)
+            # sheet.write(m, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
+            Event_Times = time_adjuster(parsed_event[1])
+            sheet.write(m, 8, Event_Times, cell_format_detail_left)
+            write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3], parsed_event[5])
+    # Freindly_fire_events = 0 # Test Code
+    if(Freindly_fire_events < 1):
+        m = m + 1
+        sheet.write(m, 0, "", cell_format_no_events_GR_left)
+        sheet.write(m, 1, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 2, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 3, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 4, "No Friendly Fire Events", cell_format_no_events_GR_middle)
+        sheet.write(m, 5, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 6, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 7, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 8, "", cell_format_no_events_GR_right)
+
+    print("FF: " + str(Freindly_fire_events))
+    # /////////////////////////Cat Kill (Blue > Red)
+    # ////////Catastrophic Killed Banner
+    m = m + 1
+    sheet.write(m, 0, "", cell_format_banner_seperator_left)
+    sheet.write(m, 1, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 2, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 3, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 4, "Catastrophic Killed (ضربة قاتلة) (Blue > Red)", cell_format_banner_seperator_middle)
+    sheet.write(m, 5, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 6, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 7, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 8, "", cell_format_banner_seperator_right)
+
+    for d in range(file_lines - 1):
+        parsed_event = filtered_text_file[d].split(";")
+        # print(parsed_event)
+        for crc in range(len(parsed_event)): #check for invalid chars in a parsed array
+            if (parsed_event[crc] == ""):
+                if (crc == 11):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+                if (crc == 3):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+            # print(parsed_event[crc])
+            # print("parsed_event[crc]")
+            hit_typ = translator(parsed_event[8])
+        if((parsed_event[8] == "Catastrophic kill") & (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue") & (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red")):
+            m = m + 1
+            Num_counter = Num_counter + 1
+            Catastrophic_kill_events_B_R = Catastrophic_kill_events_B_R + 1
+            print("Found CK")
+            sheet.write(m, 0, Num_counter, cell_format_detail_right_No)  # Hit Type Call arabic method
+            # sheet.write(m, 4, str(hit_typ), cell_format_detail_right)  # Hit Type Call arabic method *****
+            sheet.write(m, 2, int(parsed_event[11]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 1, str(str(get_participant_data(str(parsed_event[11]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[11]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 1, "Solider" + " (" + "Not in ORBAT" + ")", cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "RED"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle)
+            except:
+                sheet.write(m, 3, "Party", cell_format_detail_middle)
+            if (parsed_event[5] == "No"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            elif (parsed_event[5] == "Yes"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle_FF_yellow)
+            else:
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            # sheet.write(m, 11, parsed_event[4], cell_format_detail_middle) #re locate # Weapon data
+            sheet.write(m, 6, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 5, str(str(get_participant_data(str(parsed_event[3]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[3]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 5, "Solider" + " (" + "N/A" + ")", cell_format_detail_middle)
+            # sheet.write(m, 8, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "RED"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 7, "Party", cell_format_detail_middle)
+            except:
+                sheet.write(m, 7, "N/A", cell_format_detail_middle)
+            # sheet.write(m, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
+            Event_Times = time_adjuster(parsed_event[1])
+            sheet.write(m, 8, Event_Times, cell_format_detail_left)
+            write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3], parsed_event[5])
+    # Freindly_fire_events = 0 # Test Code
+    if(Catastrophic_kill_events_B_R < 1):
+        m = m + 1
+        sheet.write(m, 0, "", cell_format_no_events_left)
+        sheet.write(m, 1, "", cell_format_no_events_middle)
+        sheet.write(m, 2, "", cell_format_no_events_middle)
+        sheet.write(m, 3, "", cell_format_no_events_middle)
+        sheet.write(m, 4, "No Catastrophic Killed Events", cell_format_no_events_middle)
+        sheet.write(m, 5, "", cell_format_no_events_middle)
+        sheet.write(m, 6, "", cell_format_no_events_middle)
+        sheet.write(m, 7, "", cell_format_no_events_middle)
+        sheet.write(m, 8, "", cell_format_no_events_right)
+    print("CK_BR : " + str(Catastrophic_kill_events_B_R))
+    # /////////////////////////Cat Kill (Red > Blue)
+    # ////////Catastrophic Killed Banner
+    m = m + 1
+    sheet.write(m, 0, "", cell_format_banner_seperator_left)
+    sheet.write(m, 1, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 2, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 3, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 4, "Catastrophic Killed (ضربة قاتلة) (Red > Blue)", cell_format_banner_seperator_middle)
+    sheet.write(m, 5, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 6, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 7, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 8, "", cell_format_banner_seperator_right)
+    for d in range(file_lines - 1):
+        parsed_event = filtered_text_file[d].split(";")
+        # print(parsed_event)
+        for crc in range(len(parsed_event)): #check for invalid chars in a parsed array
+            if (parsed_event[crc] == ""):
+                if (crc == 11):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+                if (crc == 3):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+            # print(parsed_event[crc])
+            # print("parsed_event[crc]")
+            hit_typ = translator(parsed_event[8])
+        if((parsed_event[8] == "Catastrophic kill") & (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red") & (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue")):
+            m = m + 1
+            Num_counter = Num_counter + 1
+            Catastrophic_kill_events_R_B = Catastrophic_kill_events_R_B + 1
+            print("Found CK")
+            sheet.write(m, 0, Num_counter, cell_format_detail_right_No)  # Hit Type Call arabic method
+            # sheet.write(m, 4, str(hit_typ), cell_format_detail_right)  # Hit Type Call arabic method *****
+            sheet.write(m, 2, int(parsed_event[11]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 1, str(str(get_participant_data(str(parsed_event[11]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[11]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 1, "Solider" + " (" + "Not in ORBAT" + ")", cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "RED"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle)
+            except:
+                sheet.write(m, 3, "Party", cell_format_detail_middle)
+            if (parsed_event[5] == "No"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            elif (parsed_event[5] == "Yes"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle_FF_yellow)
+            else:
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            # sheet.write(m, 11, parsed_event[4], cell_format_detail_middle) #re locate # Weapon data
+            sheet.write(m, 6, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 5, str(str(get_participant_data(str(parsed_event[3]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[3]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 5, "Solider" + " (" + "N/A" + ")", cell_format_detail_middle)
+            # sheet.write(m, 8, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "RED"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 7, "Party", cell_format_detail_middle)
+            except:
+                sheet.write(m, 7, "N/A", cell_format_detail_middle)
+            # sheet.write(m, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
+            Event_Times = time_adjuster(parsed_event[1])
+            sheet.write(m, 8, Event_Times, cell_format_detail_left)
+            write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3], parsed_event[5])
+    if (Catastrophic_kill_events_R_B < 1):
+        m = m + 1
+        sheet.write(m, 0, "", cell_format_no_events_GR_left)
+        sheet.write(m, 1, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 2, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 3, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 4, "No Catastrophic Killed Events", cell_format_no_events_GR_middle)
+        sheet.write(m, 5, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 6, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 7, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 8, "", cell_format_no_events_GR_right)
+    print("CK_RB : " + str(Catastrophic_kill_events_R_B))
+
+    # /////////////////////////Wounding (Blue > Red)
+    # ////////Wounding (Blue > Red)
+    m = m + 1
+    sheet.write(m, 0, "", cell_format_banner_seperator_left)
+    sheet.write(m, 1, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 2, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 3, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 4, "Wounding (Blue > Red)", cell_format_banner_seperator_middle)
+    sheet.write(m, 5, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 6, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 7, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 8, "", cell_format_banner_seperator_right)
+    for d in range(file_lines - 1):
+        parsed_event = filtered_text_file[d].split(";")
+        # print(parsed_event)
+        for crc in range(len(parsed_event)): #check for invalid chars in a parsed array
+            if (parsed_event[crc] == ""):
+                if (crc == 11):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+                if (crc == 3):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+            # print(parsed_event[crc])
+            # print("parsed_event[crc]")
+            hit_typ = translator(parsed_event[8])
+        if(((parsed_event[8] == "Heavy damage") or (parsed_event[8] == "Medium damage") or (parsed_event[8] == "Light damage") ) & (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue") & (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red")):
+            m = m + 1
+            Num_counter = Num_counter + 1
+            Wounding_events_B_R = Wounding_events_B_R + 1
+            print("Found CK")
+            sheet.write(m, 0, Num_counter, cell_format_detail_right_No)  # Hit Type Call arabic method
+            # sheet.write(m, 4, str(hit_typ), cell_format_detail_right)  # Hit Type Call arabic method *****
+            sheet.write(m, 2, int(parsed_event[11]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 1, str(str(get_participant_data(str(parsed_event[11]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[11]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 1, "Solider" + " (" + "Not in ORBAT" + ")", cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "RED"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle)
+            except:
+                sheet.write(m, 3, "Party", cell_format_detail_middle)
+            if (parsed_event[5] == "No"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            elif (parsed_event[5] == "Yes"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle_FF_yellow)
+            else:
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            # sheet.write(m, 11, parsed_event[4], cell_format_detail_middle) #re locate # Weapon data
+            sheet.write(m, 6, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 5, str(str(get_participant_data(str(parsed_event[3]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[3]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 5, "Solider" + " (" + "N/A" + ")", cell_format_detail_middle)
+            # sheet.write(m, 8, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "RED"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 7, "Party", cell_format_detail_middle)
+            except:
+                sheet.write(m, 7, "N/A", cell_format_detail_middle)
+            # sheet.write(m, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
+            Event_Times = time_adjuster(parsed_event[1])
+            sheet.write(m, 8, Event_Times, cell_format_detail_left)
+            write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3], parsed_event[5])
+    if (Wounding_events_B_R < 1):
+        m = m + 1
+        sheet.write(m, 0, "", cell_format_no_events_left)
+        sheet.write(m, 1, "", cell_format_no_events_middle)
+        sheet.write(m, 2, "", cell_format_no_events_middle)
+        sheet.write(m, 3, "", cell_format_no_events_middle)
+        sheet.write(m, 4, "No Wounding Events", cell_format_no_events_middle)
+        sheet.write(m, 5, "", cell_format_no_events_middle)
+        sheet.write(m, 6, "", cell_format_no_events_middle)
+        sheet.write(m, 7, "", cell_format_no_events_middle)
+        sheet.write(m, 8, "", cell_format_no_events_right)
+    print("W_BR : " + str(Wounding_events_B_R))
+
+    # /////////////////////////Wounding (Red > Blue)
+    # ////////Wounding (Red > Blue)
+    m = m + 1
+    sheet.write(m, 0, "", cell_format_banner_seperator_left)
+    sheet.write(m, 1, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 2, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 3, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 4, "Wounding (Red > Blue)", cell_format_banner_seperator_middle)
+    sheet.write(m, 5, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 6, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 7, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 8, "", cell_format_banner_seperator_right)
+    for d in range(file_lines - 1):
+        parsed_event = filtered_text_file[d].split(";")
+        # print(parsed_event)
+        for crc in range(len(parsed_event)): #check for invalid chars in a parsed array
+            if (parsed_event[crc] == ""):
+                if (crc == 11):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+                if (crc == 3):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+            # print(parsed_event[crc])
+            # print("parsed_event[crc]")
+            hit_typ = translator(parsed_event[8])
+        if(((parsed_event[8] == "Heavy damage") or (parsed_event[8] == "Medium damage") or (parsed_event[8] == "Light damage") ) & (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red") & (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue")):
+            m = m + 1
+            Num_counter = Num_counter + 1
+            Wounding_events_R_B = Wounding_events_R_B + 1
+            print("Found CK")
+            sheet.write(m, 0, Num_counter, cell_format_detail_right_No)  # Hit Type Call arabic method
+            # sheet.write(m, 4, str(hit_typ), cell_format_detail_right)  # Hit Type Call arabic method *****
+            sheet.write(m, 2, int(parsed_event[11]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 1, str(str(get_participant_data(str(parsed_event[11]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[11]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 1, "Solider" + " (" + "Not in ORBAT" + ")", cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "RED"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle)
+            except:
+                sheet.write(m, 3, "Party", cell_format_detail_middle)
+            if (parsed_event[5] == "No"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            elif (parsed_event[5] == "Yes"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle_FF_yellow)
+            else:
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            # sheet.write(m, 11, parsed_event[4], cell_format_detail_middle) #re locate # Weapon data
+            sheet.write(m, 6, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 5, str(str(get_participant_data(str(parsed_event[3]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[3]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 5, "Solider" + " (" + "N/A" + ")", cell_format_detail_middle)
+            # sheet.write(m, 8, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "RED"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 7, "Party", cell_format_detail_middle)
+            except:
+                sheet.write(m, 7, "N/A", cell_format_detail_middle)
+            # sheet.write(m, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
+            Event_Times = time_adjuster(parsed_event[1])
+            sheet.write(m, 8, Event_Times, cell_format_detail_left)
+            write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3], parsed_event[5])
+    if (Wounding_events_R_B < 1):
+        m = m + 1
+        sheet.write(m, 0, "", cell_format_no_events_GR_left)
+        sheet.write(m, 1, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 2, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 3, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 4, "No Wounding Events", cell_format_no_events_GR_middle)
+        sheet.write(m, 5, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 6, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 7, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 8, "", cell_format_no_events_GR_right)
+    print("W_RB : " + str(Wounding_events_R_B))
+
+    # /////////////////////////Near Miss (Blue > Red)
+    # ////////Near Miss Banner
+    m = m + 1
+    sheet.write(m, 0, "", cell_format_banner_seperator_left)
+    sheet.write(m, 1, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 2, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 3, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 4, "Near Miss (Blue > Red)", cell_format_banner_seperator_middle)
+    sheet.write(m, 5, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 6, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 7, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 8, "", cell_format_banner_seperator_right)
+
+    for d in range(file_lines - 1):
+        parsed_event = filtered_text_file[d].split(";")
+        # print(parsed_event)
+        for crc in range(len(parsed_event)): #check for invalid chars in a parsed array
+            if (parsed_event[crc] == ""):
+                if (crc == 11):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+                if (crc == 3):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+            # print(parsed_event[crc])
+            # print("parsed_event[crc]")
+            hit_typ = translator(parsed_event[8])
+        if((parsed_event[8] == "Near miss") & (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue") & (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red")):
+            m = m + 1
+            Num_counter = Num_counter + 1
+            Near_miss_events_B_R = Near_miss_events_B_R + 1
+            print("Found CK")
+            sheet.write(m, 0, Num_counter, cell_format_detail_right_No)  # Hit Type Call arabic method
+            # sheet.write(m, 4, str(hit_typ), cell_format_detail_right)  # Hit Type Call arabic method *****
+            sheet.write(m, 2, int(parsed_event[11]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 1, str(str(get_participant_data(str(parsed_event[11]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[11]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 1, "Solider" + " (" + "Not in ORBAT" + ")", cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "RED"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle)
+            except:
+                sheet.write(m, 3, "Party", cell_format_detail_middle)
+            if (parsed_event[5] == "No"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            elif (parsed_event[5] == "Yes"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle_FF_yellow)
+            else:
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            # sheet.write(m, 11, parsed_event[4], cell_format_detail_middle) #re locate # Weapon data
+            sheet.write(m, 6, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 5, str(str(get_participant_data(str(parsed_event[3]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[3]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 5, "Solider" + " (" + "N/A" + ")", cell_format_detail_middle)
+            # sheet.write(m, 8, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "RED"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 7, "Party", cell_format_detail_middle)
+            except:
+                sheet.write(m, 7, "N/A", cell_format_detail_middle)
+            # sheet.write(m, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
+            Event_Times = time_adjuster(parsed_event[1])
+            sheet.write(m, 8, Event_Times, cell_format_detail_left)
+            write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3], parsed_event[5])
+    # Freindly_fire_events = 0 # Test Code
+    if(Near_miss_events_B_R < 1):
+        m = m + 1
+        sheet.write(m, 0, "", cell_format_no_events_left)
+        sheet.write(m, 1, "", cell_format_no_events_middle)
+        sheet.write(m, 2, "", cell_format_no_events_middle)
+        sheet.write(m, 3, "", cell_format_no_events_middle)
+        sheet.write(m, 4, "No Near Miss Events", cell_format_no_events_middle)
+        sheet.write(m, 5, "", cell_format_no_events_middle)
+        sheet.write(m, 6, "", cell_format_no_events_middle)
+        sheet.write(m, 7, "", cell_format_no_events_middle)
+        sheet.write(m, 8, "", cell_format_no_events_right)
+    print("NM_BR : " + str(Near_miss_events_B_R))
+
+
+    # /////////////////////////Near Miss (Red > Blue)
+    # ////////Near Miss Banner
+    m = m + 1
+    sheet.write(m, 0, "", cell_format_banner_seperator_left)
+    sheet.write(m, 1, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 2, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 3, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 4, "Near Miss (Red > Blue)", cell_format_banner_seperator_middle)
+    sheet.write(m, 5, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 6, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 7, "", cell_format_banner_seperator_middle)
+    sheet.write(m, 8, "", cell_format_banner_seperator_right)
+
+    for d in range(file_lines - 1):
+        parsed_event = filtered_text_file[d].split(";")
+        # print(parsed_event)
+        for crc in range(len(parsed_event)): #check for invalid chars in a parsed array
+            if (parsed_event[crc] == ""):
+                if (crc == 11):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+                if (crc == 3):
+                    parsed_event[crc] = 0
+                else:
+                    parsed_event[crc] = "N/A"
+            # print(parsed_event[crc])
+            # print("parsed_event[crc]")
+            hit_typ = translator(parsed_event[8])
+        if((parsed_event[8] == "Near miss") & (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red") & (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue")):
+            m = m + 1
+            Num_counter = Num_counter + 1
+            Near_miss_events_R_B = Near_miss_events_R_B + 1
+            print("Found CK")
+            sheet.write(m, 0, Num_counter, cell_format_detail_right_No)  # Hit Type Call arabic method
+            # sheet.write(m, 4, str(hit_typ), cell_format_detail_right)  # Hit Type Call arabic method *****
+            sheet.write(m, 2, int(parsed_event[11]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 1, str(str(get_participant_data(str(parsed_event[11]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[11]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 1, "Solider" + " (" + "Not in ORBAT" + ")", cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[11]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[11]), "TEAM")) == "RED"):
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 3, translator(str(get_participant_data(str(parsed_event[11]), "TEAM"))),
+                                cell_format_detail_middle)
+            except:
+                sheet.write(m, 3, "Party", cell_format_detail_middle)
+            if (parsed_event[5] == "No"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            elif (parsed_event[5] == "Yes"):
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle_FF_yellow)
+            else:
+                sheet.write(m, 4, str(hit_typ), cell_format_detail_middle)
+            # sheet.write(m, 11, parsed_event[4], cell_format_detail_middle) #re locate # Weapon data
+            sheet.write(m, 6, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                sheet.write(m, 5, str(str(get_participant_data(str(parsed_event[3]), "EN_NAME")) + " (" + str(
+                    get_participant_data(str(parsed_event[3]), "AR_NAME")) + ")"), cell_format_detail_middle)
+            except:
+                sheet.write(m, 5, "Solider" + " (" + "N/A" + ")", cell_format_detail_middle)
+            # sheet.write(m, 8, int(parsed_event[3]), cell_format_detail_middle)
+            try:
+                if (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Blue" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "BLUE"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_blue)
+                elif (str(get_participant_data(str(parsed_event[3]), "TEAM")) == "Red" or str(
+                        get_participant_data(str(parsed_event[3]), "TEAM")) == "RED"):
+                    sheet.write(m, 7, translator(str(get_participant_data(str(parsed_event[3]), "TEAM"))),
+                                cell_format_detail_middle_party_red)
+                else:
+                    sheet.write(m, 7, "Party", cell_format_detail_middle)
+            except:
+                sheet.write(m, 7, "N/A", cell_format_detail_middle)
+            # sheet.write(m, 9, parsed_event[5], cell_format_detail_middle) # Friendly fire Data
+            Event_Times = time_adjuster(parsed_event[1])
+            sheet.write(m, 8, Event_Times, cell_format_detail_left)
+            write_solider_events_files(directory, parsed_event[11], parsed_event[8], parsed_event[3], parsed_event[5])
+    # Freindly_fire_events = 0 # Test Code
+    if(Near_miss_events_R_B < 1):
+        m = m + 1
+        sheet.write(m, 0, "", cell_format_no_events_GR_left)
+        sheet.write(m, 1, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 2, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 3, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 4, "No Near Miss Events", cell_format_no_events_GR_middle)
+        sheet.write(m, 5, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 6, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 7, "", cell_format_no_events_GR_middle)
+        sheet.write(m, 8, "", cell_format_no_events_GR_right)
+    print("NM_RB : " + str(Near_miss_events_R_B))
+
+    sheet.write((m + 6), 1, "Solider ", cell_format_top_right)
+    sheet.write((m + 6), 3, "Hit events ", cell_format_top_left)
+    sheet.write((m + 6), 2, "Total Hits ", cell_format_top_middle)
+    line_st = m + 6
+    print(line_st)
+    for pan in range(len(Data_participants)):
+        # print(Data_participants[pan].get_panid())
+        if (Data_participants[pan].get_panid() != "PAN ID"):
+            events = read_solider_events_files(directory, Data_participants[pan].get_panid())
+            events_c = events.split(':')
+            if(len(events_c) - 1 > 0):
+                line_st = line_st + 1
+                sheet.write(line_st, 1,
+                            Data_participants[pan].get_en_name() + " (" + Data_participants[pan].get_ar_name() + ")",
+                            cell_format_detail_Score_names)
+                sheet.write(line_st, 3, events, cell_format_detail_middle_wrap)
+                sheet.write(line_st, 2, len(events_c) - 1, cell_format_detail_Score_nums)
+                print(line_st)
+
+
+            # print(events)
+    sheet.autofit()
+    workbook.close()
+    print("Excel File Generated..")
 def exc_header(directory):
     xl_name = directory + "\Af_results_Header.xlsx"
     filtered_text_file = open(directory + "\Filtered_txt.txt", encoding='utf-8')
@@ -700,7 +1560,13 @@ def get_participant_data(panid, data_type):
     elif (data_type == "AR_NAME"):
         return Data_participants[PAN_IDs_Participants.index(panid)].get_ar_name()
     elif (data_type == "TEAM"):
-        return Data_participants[PAN_IDs_Participants.index(panid)].get_team()
+        if(panid == "N/A" ):
+            return "Party"
+        else:
+            try:
+                return Data_participants[PAN_IDs_Participants.index(panid)].get_team()
+            except:
+                return "Party"
     elif (data_type == "PAN_ID"):
         return Data_participants[PAN_IDs_Participants.index(panid)].get_panid()
 
@@ -750,7 +1616,7 @@ if __name__ == '__main__':
     get_csv_events(file_directory)
     write_range_events_txt(file_directory)
     #excel_write_after_action(file_directory) #Enable main excel gen
-    exc_header(file_directory)
+    exc_header_V2(file_directory)
 
     # year_st, month_st, day_st = input_start_date()
     print("//////////////////////////////////////////")

@@ -1,0 +1,210 @@
+Type;Time;Party;Equipment Number;Charge Type;Friendly Fire;Properties;Stream Name;Vulnerability State;Marker Note;Operator;Originator Equipment Number
+Hit;2023-05-23T14:17:27.428;RED;1628;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1511
+Hit;2023-05-23T14:17:26.522;RED;1628;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1511
+Hit;2023-05-23T14:17:25.615;RED;1628;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1511
+Hit;2023-05-23T14:16:24.985;RED;1619;ARX-160 (DF);No;Unknow;;Near miss;;unknown;1535
+Hit;2023-05-23T14:16:23.681;RED;1619;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1535
+Hit;2023-05-23T14:14:32.796;RED;1624;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1374
+Hit;2023-05-23T14:14:31.890;RED;1624;ARX-160 (DF);No;Unknow;;Near miss;;unknown;1374
+Hit;2023-05-23T14:14:23.672;RED;1624;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1368
+Hit;2023-05-23T14:14:22.184;BLUE;1578;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1368
+Hit;2023-05-23T14:14:20.371;BLUE;1578;ARX-160 (DF);Yes;Unknow;;Near miss;;unknown;1368
+Hit;2023-05-23T14:14:17.652;BLUE;1578;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1368
+Hit;2023-05-23T14:14:08.303;BLUE;1381;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1578
+Hit;2023-05-23T14:09:57.569;RED;1636;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1546
+Hit;2023-05-23T14:09:14.981;BLUE;1584;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1636
+Hit;2023-05-23T14:09:14.245;BLUE;1348;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1560
+Hit;2023-05-23T14:09:13.194;BLUE;1348;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1560
+Hit;2023-05-23T14:08:50.898;RED;1627;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1525
+Hit;2023-05-23T14:08:49.119;RED;1627;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1525
+Hit;2023-05-23T14:07:34.571;BLUE;1607;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1578
+Hit;2023-05-23T14:07:32.997;RED;1621;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1607
+Hit;2023-05-23T14:06:56.106;RED;1633;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1548
+Hit;2023-05-23T14:05:40.428;BLUE;1383;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1502
+Hit;2023-05-23T14:05:37.084;BLUE;1383;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1354
+Hit;2023-05-23T14:05:18.190;BLUE;1077;ARX-160 (DF);No;Unknow;;Near miss;;unknown;1630
+Hit;2023-05-23T14:03:15.205;RED;1632;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1543
+Hit;2023-05-23T14:02:28.124;RED;1624;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1547
+Hit;2023-05-23T13:57:50.009;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1609
+Hit;2023-05-23T13:57:22.214;BLUE;1277;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T13:57:15.908;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1609
+Hit;2023-05-23T13:57:14.510;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Near miss;;unknown;1609
+Hit;2023-05-23T13:56:33.793;BLUE;1551;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1609
+Hit;2023-05-23T13:56:31.809;BLUE;1551;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1609
+Hit;2023-05-23T13:56:20.248;BLUE;1551;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1609
+Hit;2023-05-23T13:55:53.899;BLUE;1551;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1609
+Hit;2023-05-23T13:55:12.645;BLUE;1551;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1609
+Hit;2023-05-23T13:55:11.739;BLUE;1551;ARX-160 (DF);Yes;Unknow;;Near miss;;unknown;1609
+Hit;2023-05-23T13:41:17.769;BLUE;1550;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1502
+Hit;2023-05-23T13:40:55.733;BLUE;1551; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-05-23T13:38:47.592;BLUE;1074;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1381
+Hit;2023-05-23T13:33:03.167;BLUE;1053;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1368
+Hit;2023-05-23T13:32:01.565;BLUE;1549;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1368
+Hit;2023-05-23T13:23:03.373;RED;1628;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1511
+Hit;2023-05-23T13:23:02.610;RED;1628;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1511
+Hit;2023-05-23T13:23:01.110;BLUE;1117;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1628
+Hit;2023-05-23T13:23:00.710;RED;1628;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1511
+Hit;2023-05-23T13:23:00.187;BLUE;1117;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1628
+Hit;2023-05-23T13:22:59.321;BLUE;1117;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1628
+Hit;2023-05-23T13:20:32.750;BLUE;1368;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1621
+Hit;2023-05-23T13:20:32.341;RED;1621;ARX-160 (DF);No;Unknow;;Near miss;;unknown;1368
+Hit;2023-05-23T13:20:29.860;RED;1621;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1368
+Hit;2023-05-23T13:20:26.959;RED;1621;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1368
+Hit;2023-05-23T13:20:25.636;BLUE;1368;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1621
+Hit;2023-05-23T13:20:18.487;RED;1624;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1368
+Hit;2023-05-23T13:18:42.465;BLUE;1074;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1624
+Hit;2023-05-23T13:16:46.257;BLUE;1547;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1074
+Hit;2023-05-23T13:14:09.432;RED;1636;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1278
+Hit;2023-05-23T13:14:07.618;RED;1636;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1546
+Hit;2023-05-23T13:13:26.804;RED;1627;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1560
+Hit;2023-05-23T13:11:37.180;BLUE;1052;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1624
+Hit;2023-05-23T13:11:29.110;BLUE;1052;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1547
+Hit;2023-05-23T13:11:28.909;BLUE;1074;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1547
+Hit;2023-05-23T13:11:28.124;BLUE;1052;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1074
+Hit;2023-05-23T13:11:28.016;BLUE;1547;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1074
+Hit;2023-05-23T13:11:21.012;BLUE;1502;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1632
+Hit;2023-05-23T13:11:18.935;BLUE;1502;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1632
+Hit;2023-05-23T13:11:18.146;BLUE;1502;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1632
+Hit;2023-05-23T13:10:59.512;RED;1633;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1077
+Hit;2023-05-23T13:10:58.663;RED;1633;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1077
+Hit;2023-05-23T13:08:19.345;RED;1631;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1543
+Hit;2023-05-23T13:05:26.965;RED;1631;ARX-160 (DF);No;Unknow;;Near miss;;unknown;1061
+Hit;2023-05-23T13:04:01.865;BLUE;1590;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1604
+Hit;2023-05-23T13:03:19.886;BLUE;1348;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1619
+Hit;2023-05-23T12:53:18.698;BLUE;1502;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1550
+Hit;2023-05-23T12:52:40.663;BLUE;1479;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1368
+Hit;2023-05-23T12:51:18.565;BLUE;1374;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1368
+Hit;2023-05-23T12:47:33.343;BLUE;1426;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1518
+Hit;2023-05-23T12:47:10.336;BLUE;1372;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1543
+Hit;2023-05-23T12:09:42.498;Party 3;1646;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1642
+Hit;2023-05-23T12:09:22.031;RED;1624;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1642
+Hit;2023-05-23T12:09:02.548;Party 3;1650;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1646
+Hit;2023-05-23T12:04:58.483;Party 3;1646;;;Unknow;;Light damage;;unknown;
+Hit;2023-05-23T12:04:58.299;RED;1624;;;Unknow;;Light damage;;unknown;
+Hit;2023-05-23T12:02:29.565;Party 3;1650;9mm Pistol (DF);No;Unknow;;Catastrophic kill;;unknown;1624
+Hit;2023-05-23T12:01:35.334;Party 3;1650;9mm Pistol (DF);No;Unknow;;Heavy damage;;unknown;1624
+Hit;2023-05-23T12:00:16.242;Party 3;1642;9mm Pistol (DF);Yes;Unknow;;Catastrophic kill;;unknown;1650
+Hit;2023-05-23T11:47:02.863;Party 3;1650; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-05-23T11:36:50.611;Party 3;1646;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1650
+Hit;2023-05-23T11:31:37.244;Party 3;1650;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1641
+Hit;2023-05-23T11:30:45.849;Party 3;1646;9mm Pistol (DF);Yes;Unknow;;Heavy damage;;unknown;1650
+Hit;2023-05-23T10:42:56.261;BLUE;1558;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-05-23T07:27:43.886;BLUE;1558;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1550
+Hit;2023-05-23T06:47:50.572;BLUE;1488;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1578
+Hit;2023-05-23T06:39:51.126;BLUE;1547;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1074
+Hit;2023-05-23T06:38:09.567;BLUE;1371;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1283
+Hit;2023-05-23T06:38:01.579;BLUE;1371;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1283
+Hit;2023-05-23T06:34:45.906;BLUE;1074; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-05-23T06:31:54.491;BLUE;1540;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1518
+Hit;2023-05-23T06:25:43.579;BLUE;1078;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1372
+Hit;2023-05-23T06:25:43.083;BLUE;1277;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1372
+Hit;2023-05-23T06:22:47.571;BLUE;1374;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1364
+Hit;2023-05-23T06:18:39.924;BLUE;1547;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1369
+Hit;2023-05-23T06:18:15.656;BLUE;1590;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1540
+Hit;2023-05-23T06:13:28.880;BLUE;1526;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1276
+Hit;2023-05-23T06:11:53.184;BLUE;1618;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1553
+Hit;2023-05-23T06:10:51.122;BLUE;1618;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1553
+Hit;2023-05-23T06:10:50.993;BLUE;1584;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1553
+Hit;2023-05-23T06:08:56.781;BLUE;1562; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-05-23T06:04:21.736;BLUE;1364;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1061
+Hit;2023-05-23T06:03:21.586;BLUE;1535;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1123
+Hit;2023-05-23T06:02:39.012;BLUE;1536;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1282
+Hit;2023-05-23T06:02:17.168;BLUE;1367;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1282
+Hit;2023-05-23T06:02:17.167;BLUE;1536;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1282
+Hit;2023-05-23T06:02:16.970;BLUE;1285;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1282
+Hit;2023-05-23T06:02:05.186;BLUE;1536;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1282
+Hit;2023-05-23T06:02:05.186;BLUE;1285;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1282
+Hit;2023-05-23T06:02:04.985;BLUE;1367;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1282
+Hit;2023-05-23T06:01:51.709;BLUE;1381;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1052
+Hit;2023-05-23T06:01:47.800;BLUE;1381;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1052
+Hit;2023-05-23T05:59:04.294;BLUE;1348;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1519
+Hit;2023-05-23T05:47:25.192;BLUE;1383;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1578
+Hit;2023-05-23T05:44:51.567;BLUE;1074;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1547
+Hit;2023-05-23T05:44:41.399;BLUE;1383;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1578
+Hit;2023-05-23T05:39:20.580;BLUE;1383;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1578
+Hit;2023-05-23T05:39:04.924;BLUE;1618;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1348
+Hit;2023-05-23T05:38:31.577;BLUE;1550;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1607
+Hit;2023-05-23T05:30:51.644;BLUE;1426;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1518
+Hit;2023-05-23T05:30:51.444;BLUE;1607;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1518
+Hit;2023-05-23T05:20:22.913;BLUE;1287;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1560
+Hit;2023-05-23T05:20:22.713;BLUE;1595;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1560
+Hit;2023-05-23T05:19:07.274;BLUE;1378;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T05:15:49.869;BLUE;1347;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1061
+Hit;2023-05-23T05:15:49.678;BLUE;1378;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T05:13:26.241;BLUE;1551; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-05-23T05:12:15.860;BLUE;1551; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-05-23T05:11:55.453;BLUE;1347;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1061
+Hit;2023-05-23T05:11:55.247;BLUE;1378;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T05:10:52.848;BLUE;1541;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T05:10:52.645;BLUE;1347;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T05:08:21.556;BLUE;1347;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1352
+Hit;2023-05-23T05:02:20.648;BLUE;1352;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T05:00:42.496;BLUE;1502;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1609
+Hit;2023-05-23T04:59:54.997;BLUE;1618;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1419
+Hit;2023-05-23T04:59:30.336;BLUE;1374;ARX-160 (DF);Yes;Unknow;;Near miss;;unknown;1609
+Hit;2023-05-23T04:58:26.649;BLUE;1352;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1061
+Hit;2023-05-23T04:55:13.763;BLUE;1551; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-05-23T04:54:42.228;BLUE;1347;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1550
+Hit;2023-05-23T04:54:32.723;BLUE;1577;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1551
+Hit;2023-05-23T04:53:42.689;BLUE;1445;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1061
+Hit;2023-05-23T04:47:31.308;BLUE;1551;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1060
+Hit;2023-05-23T04:46:48.227;BLUE;1365;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1609
+Hit;2023-05-23T04:46:46.243;BLUE;1365;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1609
+Hit;2023-05-23T04:45:30.623;BLUE;1543;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1352
+Hit;2023-05-23T04:45:25.564;BLUE;1543;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1352
+Hit;2023-05-23T04:45:16.384;BLUE;1359;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T04:45:13.097;BLUE;1543;ARX-160 (DF);Yes;Unknow;;Near miss;;unknown;1562
+Hit;2023-05-23T04:35:36.203;BLUE;1347;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1550
+Hit;2023-05-23T04:27:55.248;BLUE;1551;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1060
+Hit;2023-05-23T04:21:56.080;BLUE;1502;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1550
+Hit;2023-05-23T04:21:46.079;BLUE;1552;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1550
+Hit;2023-05-23T04:21:02.076;BLUE;1590;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1550
+Hit;2023-05-23T04:21:00.093;BLUE;1590;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1550
+Hit;2023-05-23T04:20:49.014;BLUE;1609;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1550
+Hit;2023-05-23T04:20:48.108;BLUE;1609;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1550
+Hit;2023-05-23T04:20:46.111;BLUE;1604;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1550
+Hit;2023-05-23T04:20:20.115;BLUE;1354;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1550
+Hit;2023-05-23T04:17:27.749;BLUE;1277;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1061
+Hit;2023-05-23T04:14:32.210;BLUE;1502;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1550
+Hit;2023-05-23T04:13:08.173;BLUE;1502;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1550
+Hit;2023-05-23T04:13:06.077;BLUE;1502;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1550
+Hit;2023-05-23T04:09:14.130;BLUE;1618;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-05-23T04:03:12.238;BLUE;1354;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1550
+Hit;2023-05-23T04:02:31.977;BLUE;1380;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1346
+Hit;2023-05-23T04:02:31.070;BLUE;1380;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1346
+Hit;2023-05-23T03:53:02.421;BLUE;1061;ARX-160 (DF);Yes;Unknow;;Near miss;;unknown;1346
+Hit;2023-05-23T03:52:50.379;BLUE;1372;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1366
+Hit;2023-05-23T03:51:54.959;BLUE;1346;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-05-23T03:46:35.485;BLUE;1445; (DF);No;Unknow;;Hit with no effect;;unknown;
+Hit;2023-05-23T03:43:17.861;BLUE;1547;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1366
+Hit;2023-05-23T03:43:16.601;BLUE;1511;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1346
+Hit;2023-05-23T03:41:36.030;BLUE;1381;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1346
+Hit;2023-05-23T03:36:33.289;BLUE;1364;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1346
+Hit;2023-05-23T03:36:27.906;BLUE;1364;ARX-160 (DF);Yes;Unknow;;Medium damage;;unknown;1346
+Hit;2023-05-23T03:34:30.112;BLUE;1347;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1550
+Hit;2023-05-23T03:14:34.896;BLUE;1074;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1547
+Hit;2023-05-23T02:00:12.948;Party 3;1646;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-05-23T01:59:57.649;Party 3;1646;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-05-23T01:59:42.065;Party 3;1646;;;Unknow;;Heavy damage;;unknown;
+Hit;2023-05-23T01:59:39.742;Party 3;1646;;;Unknow;;Medium damage;;unknown;
+Hit;2023-05-23T01:59:27.729;Party 3;1646;;;Unknow;;Light damage;;unknown;
+Hit;2023-05-22T05:52:44.000;BLUE;1511;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-05-22T05:52:18.792;BLUE;1511;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1502
+Hit;2023-05-22T05:51:41.851;BLUE;1511;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1502
+Hit;2023-05-22T05:51:12.596;BLUE;1511;ARX-160 (DF);Yes;Unknow;;Heavy damage;;unknown;1502
+Hit;2023-05-22T05:50:21.497;RED;1624;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1502
+Hit;2023-05-22T05:49:48.506;RED;1624;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-05-22T05:47:47.891;RED;1624;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1511
+Hit;2023-05-22T05:47:24.472;RED;1624;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1502
+Hit;2023-05-22T05:46:31.204;RED;1624;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-05-22T05:45:58.970;RED;1624;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-05-21T08:19:44.105;BLUE;1488;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-05-21T05:10:00.667;RED;1628;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1619
+Hit;2023-05-21T05:08:17.886;RED;1619;ARX-160 (DF);Yes;Unknow;;Catastrophic kill;;unknown;1628
+Hit;2023-05-21T02:37:48.982;Party 3;1648;ARX-160 (DF);No;Unknow;;Catastrophic kill;;unknown;1488
+Hit;2023-05-21T02:37:43.983;Party 3;1648;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-05-21T02:36:43.978;Party 3;1648;ARX-160 (DF);No;Unknow;;Heavy damage;;unknown;1488
+Hit;2023-05-21T02:36:34.240;Party 3;1648;ARX-160 (DF);No;Unknow;;Medium damage;;unknown;1488
+Hit;2023-05-18T08:46:06.670;RED;1605;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-05-18T08:46:06.307;BLUE;1526;;;Unknow;;Catastrophic kill;;unknown;
+Hit;2023-05-18T06:36:18.608;BLUE;1349;;;Unknow;;Catastrophic kill;;unknown;
