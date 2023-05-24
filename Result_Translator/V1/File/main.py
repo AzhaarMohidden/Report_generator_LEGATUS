@@ -1105,7 +1105,7 @@ def exc_header_V2(directory):
     sheet.write((m + 6), 3, "Hit events ", cell_format_top_left)
     sheet.write((m + 6), 2, "Total Hits ", cell_format_top_middle)
     line_st = m + 6
-    print(line_st)
+    # print(line_st)
     for pan in range(len(Data_participants)):
         # print(Data_participants[pan].get_panid())
         if (Data_participants[pan].get_panid() != "PAN ID"):
@@ -1118,7 +1118,7 @@ def exc_header_V2(directory):
                             cell_format_detail_Score_names)
                 sheet.write(line_st, 3, events, cell_format_detail_middle_wrap)
                 sheet.write(line_st, 2, len(events_c) - 1, cell_format_detail_Score_nums)
-                print(line_st)
+                # print(line_st)
 
 
             # print(events)
